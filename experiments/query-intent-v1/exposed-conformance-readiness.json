@@ -1,0 +1,446 @@
+{
+  "readiness_version": "P12-EXPOSED-CONFORMANCE-READINESS-1",
+  "protocol_version": "P12-QUERY-INTENT-1",
+  "phase": "exposed-conformance",
+  "state": "prepared_not_run",
+  "preparation": "CPU-only identity and budget verification; no generation, runtime/GPU probe, or model download",
+  "preparation_base_commit": "f56bd04b38574a7f45e11d00c728634165eab6ad",
+  "write_once": true,
+  "prepared_before_later_resource_handover": true,
+  "resource_handover_required": true,
+  "development_gate_is_resource_authorization": false,
+  "scope": "Nine already-exposed declared mappings, not an independently unseen benchmark or broad natural-language accuracy test",
+  "method_freeze_sha256": "2b971409cf0867b5f00d08654cd296e2c64919e3e7e0d3517a61402dc57a40dc",
+  "method_file_count": 19,
+  "method_file_sha256": {
+    "experiments/query-intent-v1/prompt.txt": "ee0f6fe0c049372ba8e00157a07f7b43bc837ee51da3966e102b87f6a8cdffdb",
+    "experiments/query-intent-v1/schema.json": "167940958ee92092fddb2a88ea5b615d48335485f3272f04a6241cde7913c2a9",
+    "experiments/query-intent-v1/runtime.json": "b843b4822cdba5de8492e7d27b0e48c69c7cc1ddb22307ea68cebb4527605532",
+    "experiments/query-intent-v1/questions-development.json": "3128dd76daa09ab66b952868b1a0c00fd0b5e855452b8dcc455c94611c491814",
+    "experiments/query-intent-v1/questions-exposed-conformance.json": "a1af0041e9840b518aca394b7f72fb1e23b245474a31e7d4e1e2c958259f3847",
+    "experiments/query-intent-v1/expected-queries.json": "b59f8022b3afd98d9183fc05cd0036e2f82b481dfc5a9d0a9a8774fc172aa589",
+    "experiments/query-intent-v1/protocol.md": "2e55ee92dbb156da170e728667d14706fb66967e03e8ad5e629cc422b452b0b6",
+    "scripts/intent-payload.py": "8c4b8b130ebdd7725441bcd4ce371fed96946593feafe11bd42f74dc81bb3ceb",
+    "scripts/run-intent-v1.py": "68d1f5bc21ce198a377b46b7c45ddad09a99f3f5d718acefd2313a96bbce8e4d",
+    "scripts/grade-intent-v1.mjs": "4465fee1aaf4d3badbe18bedd6467ea3ef4c8c1c49c9e123ace49fba9388000a",
+    "intent-validation.mjs": "e36d9cf35cb1bd2d8087336ae6e0063f5b57b8343306e9d38c1c440e57993903",
+    "intent-store.mjs": "f7d2be7e3ee9c29c58db2b383777146990af40ccc8467f798819931a2c52a714",
+    "intent-attempt.mjs": "127965109cf979a7c436f7c811a4cf28e315881959ee2b434e8a9dc458ce0452",
+    "intent-grading.mjs": "1a68ddd70b286c96786446d0f13cfcc181da0a45e2ccbd512cfc132e4a053d14",
+    "strict-json.mjs": "c9d78169bb23e60f34a17126cef2f3be46eefdb058db7e6e45317f8e049ee78e",
+    "core.mjs": "f2e62b96d41f609ba1a6d4ec80107ff0da989d0926c09233cbc328847ada0837",
+    "policy.mjs": "e69f431c51ed71fe2aa11ffa599f1a24a69e27f62f858bb65f6d362683f816b2",
+    "query-policy.json": "dc1d2c97a5cc0a37448d6ece30da0cf51e8ce9a0e01437c3be8ba391002d32a3",
+    "data/source-dictionary.json": "0addb58b376c8583e7d23b0ed8ce614e7f536f20b435efc378641b12d04def33"
+  },
+  "protected_cpu_baseline_file_count": 24,
+  "protected_cpu_baseline_files": [
+    {
+      "path": "core.mjs",
+      "sha256": "f2e62b96d41f609ba1a6d4ec80107ff0da989d0926c09233cbc328847ada0837"
+    },
+    {
+      "path": "data/Steel_industry_data.csv",
+      "sha256": "9b1cee6f9cb9cd9df2b95814ca90a9a2ff15b7f5f1fba0fae3c643e82072eacc"
+    },
+    {
+      "path": "data/admission.json",
+      "sha256": "3e54a4ecdd5bfcddef3f4390ea19000f93cc0423b1542816cfdb8b08d7072ae2"
+    },
+    {
+      "path": "data/source-dictionary.json",
+      "sha256": "0addb58b376c8583e7d23b0ed8ce614e7f536f20b435efc378641b12d04def33"
+    },
+    {
+      "path": "data/steel-industry-energy-consumption.zip",
+      "sha256": "d82d28b33780ff1582507fcf08ae764ff648af459d58234370c551e62aadeaef"
+    },
+    {
+      "path": "docs/admission-desktop.png",
+      "sha256": "b2590da8c90b3678af1f06ec3a58a6bda7ecb7ca5527b07343b50d8acda6e4c6"
+    },
+    {
+      "path": "docs/architecture.png",
+      "sha256": "37ea8e6c3132812365e0ea74a70f168cadaaf2c73e227540e6c1524e0a8a825a"
+    },
+    {
+      "path": "docs/architecture.svg",
+      "sha256": "6b119c52040faa551ac580254f3b71b49d55092c77dd0434c1075862f632379a"
+    },
+    {
+      "path": "docs/asset-provenance.json",
+      "sha256": "c6459a117dc577b49e59cb9d01d5380588e46bab98358aa069a8f67624730110"
+    },
+    {
+      "path": "docs/cpu-demo.mp4",
+      "sha256": "097835471c7de48926e16d2af5fb3cc50ae76d7a735535039b09984f23bc6399"
+    },
+    {
+      "path": "docs/energy-desktop.png",
+      "sha256": "297065370aef5e987cc18039aaf273407910a7a7cfe8531b305ac53a3696067b"
+    },
+    {
+      "path": "docs/energy-mobile-390.png",
+      "sha256": "d294179fa8830955e6d2301d8d8b6e12f5b4ee7ebc96984daa1d6883c09501c4"
+    },
+    {
+      "path": "docs/partial-coverage-desktop.png",
+      "sha256": "34e6fc01cfc7cf3f5c22c48e5dbd7a136def64911898e9b0cc190c9769cc0f12"
+    },
+    {
+      "path": "docs/stale-query-desktop.png",
+      "sha256": "f4218c02497ba735292a8560064dab780e1d972303c4ce6a171b6347d2483a8d"
+    },
+    {
+      "path": "docs/stored-source-zero-desktop.png",
+      "sha256": "2b016b9d6cb6a56d70ec22712d09debf1c39c552c76e53a63b71e1f39e4c84da"
+    },
+    {
+      "path": "docs/unresolved-desktop.png",
+      "sha256": "78c26c7b052c87bc13f008742eabadc2c69ffe522bd044538a93a9496055b00e"
+    },
+    {
+      "path": "evidence/browser-checks.json",
+      "sha256": "bd7023a2247b7064f426b497863055038569a8d69219901c615ab07801a15ea6"
+    },
+    {
+      "path": "evidence/cpu-conformance.json",
+      "sha256": "1fa6e5ed46f5b87f4b02e6920e420eaee245248828e378f44e17e49edb39efb1"
+    },
+    {
+      "path": "evidence/independent-arithmetic.json",
+      "sha256": "c5db4ef013773c99f273f78d1021cfeef0759a037d16499817911749a83cb097"
+    },
+    {
+      "path": "evidence/jan15-receipt.json",
+      "sha256": "7182a00aa0bd34eb9306a788e23614511cc4112cea6a7145a5dd863faabee4da"
+    },
+    {
+      "path": "evidence/media-manifest.json",
+      "sha256": "17a849144cbbd6aa3d91e9f42d4880bfab675b3b541da633b2c17e819d3022bd"
+    },
+    {
+      "path": "evidence/ui-before-repair.json",
+      "sha256": "5109c938c0a93a55f522266cda97d8d31196f8dacd8bb533ca275f4975b0f765"
+    },
+    {
+      "path": "policy.mjs",
+      "sha256": "e69f431c51ed71fe2aa11ffa599f1a24a69e27f62f858bb65f6d362683f816b2"
+    },
+    {
+      "path": "query-policy.json",
+      "sha256": "dc1d2c97a5cc0a37448d6ece30da0cf51e8ce9a0e01437c3be8ba391002d32a3"
+    }
+  ],
+  "unchanged_existing_result_sha256": {
+    "model-runs/query-intent-v1/development/D1.json": "b1b6facf902656d2e2cffa47717163463ef2acbb49b890fe12f4425bf4f9112f",
+    "model-runs/query-intent-v1/development/D2.json": "4b545c32fefc43b475e2cd3b3b30c0345382efa9d136abefa8428b7b22f0d82c",
+    "model-runs/query-intent-v1/development/D3.json": "9bff77684dcb979193aba09a4553fc8bfe2ffd2d1e5f1d601aa5cb33af9eecf2",
+    "model-runs/query-intent-v1/development-report.json": "1eee10a50b30671f505c906237573357e2e9e37d95c8794d155a054816717b68"
+  },
+  "source_csv_sha256": "9b1cee6f9cb9cd9df2b95814ca90a9a2ff15b7f5f1fba0fae3c643e82072eacc",
+  "source_dictionary_sha256": "0addb58b376c8583e7d23b0ed8ce614e7f536f20b435efc378641b12d04def33",
+  "query_policy_sha256": "dc1d2c97a5cc0a37448d6ece30da0cf51e8ce9a0e01437c3be8ba391002d32a3",
+  "questions_path": "experiments/query-intent-v1/questions-exposed-conformance.json",
+  "questions_sha256": "a1af0041e9840b518aca394b7f72fb1e23b245474a31e7d4e1e2c958259f3847",
+  "expected_labels_path": "experiments/query-intent-v1/expected-queries.json",
+  "expected_labels_sha256": "b59f8022b3afd98d9183fc05cd0036e2f82b481dfc5a9d0a9a8774fc172aa589",
+  "canonical_request_digest_basis": "UTF-8 compact JSON in the insertion order returned by unchanged frozen payload_for; expected labels never enter requests",
+  "runtime_identity_basis": "Unchanged pinned runtime declaration; no live runtime/GPU identity probe in this preparation",
+  "runtime": {
+    "model": "qwen3:4b",
+    "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+    "ollama_version": "0.17.7",
+    "context_tokens": 4096,
+    "output_reserved_tokens": 640,
+    "extra_safety_tokens": 128,
+    "timeout_seconds": 60,
+    "concurrency": 1,
+    "retry_calls": 0,
+    "demo_calls": 0,
+    "temperature": 0,
+    "seed": 42,
+    "raw": true,
+    "stream": false,
+    "think": false,
+    "response_byte_limit": 65536
+  },
+  "scheduled_case_ids": [
+    "E1",
+    "E2",
+    "E3",
+    "E4",
+    "E5",
+    "E6",
+    "E7",
+    "E8",
+    "E9"
+  ],
+  "scheduled_case_count": 9,
+  "generation_calls_in_preparation": 0,
+  "exposed_conformance_calls_recorded_at_preparation": 0,
+  "minimum_conservative_context_headroom": 1007,
+  "tokenization": "Conservative UTF-8-byte upper bound, not measured tokenization",
+  "grading": {
+    "unchanged_grader_path": "scripts/grade-intent-v1.mjs",
+    "unchanged_grader_sha256": "4465fee1aaf4d3badbe18bedd6467ea3ef4c8c1c49c9e123ace49fba9388000a",
+    "unchanged_grading_module_sha256": "1a68ddd70b286c96786446d0f13cfcc181da0a45e2ccbd512cfc132e4a053d14",
+    "scheduled_failure_denominator": 9,
+    "raw_field_denominator": 63,
+    "strict_full_query_denominator": 9,
+    "structural_denominator": 9,
+    "policy_denominator": 9,
+    "report_separately": [
+      "scheduled",
+      "attempted",
+      "completed_provenance_valid",
+      "raw_field_matches",
+      "strict_full_query_matches",
+      "structural_validity",
+      "policy_allowed_or_rejected",
+      "unexpected_fields"
+    ],
+    "failure_rule": "Every scheduled missing, refused, malformed, truncated, timed-out or HTTP-rejected output remains in the denominator; absent fields are wrong",
+    "policy_rejection_is_semantic_failure": false,
+    "deterministic_repair_credit": 0,
+    "backend_arithmetic_credit_to_model": 0,
+    "method_tuning_or_question_changes_for_this_batch": false
+  },
+  "development_literal_match_scope": {
+    "raw_field_matches": 21,
+    "raw_field_denominator": 21,
+    "operation_choices": 3,
+    "schema_version_values": 3,
+    "null_filter_or_topic_values": 15,
+    "date_extraction_evidence": false,
+    "category_filter_selection_evidence": false,
+    "unknown_topic_routing_evidence": false
+  },
+  "planned_coverage_limits": {
+    "source_weekstatus_values": [
+      null
+    ],
+    "source_weekstatus_filter_selection_tested": false,
+    "count_source_rows_in_development_or_prepared_cases": false,
+    "nine_case_results_available": false,
+    "general_natural_language_accuracy_claim": false
+  },
+  "cases": [
+    {
+      "case_id": "E1",
+      "question": "Sum source Usage_kWh for date labels from 2018-01-01 inclusive to 2018-02-01 exclusive.",
+      "question_sha256": "524ad76c6d669744e9face86d8193c2434040efa9c0bb401ba5cdcf26615a8e1",
+      "request_sha256": "5c2b9d4f8c1a976acf51cd599000c983675d391c4227943da4d28408723e15d4",
+      "raw_prompt_utf8_bytes": 2308,
+      "input_token_upper_bound": 2309,
+      "output_reserved_tokens": 640,
+      "extra_safety_tokens": 128,
+      "conservative_context_headroom": 1019,
+      "actual_tokenization_measured": false,
+      "expected_query": {
+        "schema_version": "P12-UCI851-QUERY-1",
+        "operation": "sum_source_usage_kwh",
+        "source_labeled_date_from": "2018-01-01",
+        "source_labeled_date_to_exclusive": "2018-02-01",
+        "source_weekstatus": null,
+        "source_load_type": null,
+        "unavailable_topic": null
+      },
+      "expected_policy_state": "valid",
+      "expected_query_pointer": "experiments/query-intent-v1/expected-queries.json#/cases/3/query",
+      "expected_policy_state_pointer": "experiments/query-intent-v1/expected-queries.json#/cases/3/policy_state"
+    },
+    {
+      "case_id": "E2",
+      "question": "Sum source Usage_kWh for date labels from 2018-01-15 inclusive to 2018-01-16 exclusive.",
+      "question_sha256": "e1ac01a35f06076aba889105081ab1de0797c6e9d30b51d10af6852f5eacb706",
+      "request_sha256": "e759b627530b10e0a5183d192ff901980a224c5a2b85881ee46a28db3bb40cb6",
+      "raw_prompt_utf8_bytes": 2308,
+      "input_token_upper_bound": 2309,
+      "output_reserved_tokens": 640,
+      "extra_safety_tokens": 128,
+      "conservative_context_headroom": 1019,
+      "actual_tokenization_measured": false,
+      "expected_query": {
+        "schema_version": "P12-UCI851-QUERY-1",
+        "operation": "sum_source_usage_kwh",
+        "source_labeled_date_from": "2018-01-15",
+        "source_labeled_date_to_exclusive": "2018-01-16",
+        "source_weekstatus": null,
+        "source_load_type": null,
+        "unavailable_topic": null
+      },
+      "expected_policy_state": "valid",
+      "expected_query_pointer": "experiments/query-intent-v1/expected-queries.json#/cases/4/query",
+      "expected_policy_state_pointer": "experiments/query-intent-v1/expected-queries.json#/cases/4/policy_state"
+    },
+    {
+      "case_id": "E3",
+      "question": "Compare source Usage_kWh sums for WeekStatus Weekday and Weekend across the entire file.",
+      "question_sha256": "3a9dfdef32d16aab4d74680e0412b1069e11e2926ffc79b95f1ac169df580a06",
+      "request_sha256": "6c0917eba319e07b9e59c9d9a86adcb0cc6e2d038fb0a73bab908a160671cbe3",
+      "raw_prompt_utf8_bytes": 2309,
+      "input_token_upper_bound": 2310,
+      "output_reserved_tokens": 640,
+      "extra_safety_tokens": 128,
+      "conservative_context_headroom": 1018,
+      "actual_tokenization_measured": false,
+      "expected_query": {
+        "schema_version": "P12-UCI851-QUERY-1",
+        "operation": "compare_source_weekstatus_sums",
+        "source_labeled_date_from": null,
+        "source_labeled_date_to_exclusive": null,
+        "source_weekstatus": null,
+        "source_load_type": null,
+        "unavailable_topic": null
+      },
+      "expected_policy_state": "valid",
+      "expected_query_pointer": "experiments/query-intent-v1/expected-queries.json#/cases/5/query",
+      "expected_policy_state_pointer": "experiments/query-intent-v1/expected-queries.json#/cases/5/policy_state"
+    },
+    {
+      "case_id": "E4",
+      "question": "Does the historical source cover calendar labels from 2018-02-29 inclusive to 2018-03-01 exclusive?",
+      "question_sha256": "c2052c07cdfd170c412238ca14695752e63d26f1f17d44aebbdb996a8e19cf2b",
+      "request_sha256": "4f965955efe729bb0152c79167e2b7393eec7627cdac30f3ba888691b0541db6",
+      "raw_prompt_utf8_bytes": 2320,
+      "input_token_upper_bound": 2321,
+      "output_reserved_tokens": 640,
+      "extra_safety_tokens": 128,
+      "conservative_context_headroom": 1007,
+      "actual_tokenization_measured": false,
+      "expected_query": {
+        "schema_version": "P12-UCI851-QUERY-1",
+        "operation": "report_missing_or_unresolved_field",
+        "source_labeled_date_from": "2018-02-29",
+        "source_labeled_date_to_exclusive": "2018-03-01",
+        "source_weekstatus": null,
+        "source_load_type": null,
+        "unavailable_topic": "period_coverage"
+      },
+      "expected_policy_state": "invalid_calendar_date",
+      "expected_query_pointer": "experiments/query-intent-v1/expected-queries.json#/cases/6/query",
+      "expected_policy_state_pointer": "experiments/query-intent-v1/expected-queries.json#/cases/6/policy_state"
+    },
+    {
+      "case_id": "E5",
+      "question": "Does the historical source cover calendar labels from 2026-09-30 inclusive to 2026-10-01 exclusive?",
+      "question_sha256": "5519c37224e2c7eb323bdb6bd39831bab861b2c49e9767e2a38b07fc66b093a2",
+      "request_sha256": "4e35c7f443e8b4d1b8bde4991f0c0d5af3f92c6535d8e4db765bdd27b7229610",
+      "raw_prompt_utf8_bytes": 2320,
+      "input_token_upper_bound": 2321,
+      "output_reserved_tokens": 640,
+      "extra_safety_tokens": 128,
+      "conservative_context_headroom": 1007,
+      "actual_tokenization_measured": false,
+      "expected_query": {
+        "schema_version": "P12-UCI851-QUERY-1",
+        "operation": "report_missing_or_unresolved_field",
+        "source_labeled_date_from": "2026-09-30",
+        "source_labeled_date_to_exclusive": "2026-10-01",
+        "source_weekstatus": null,
+        "source_load_type": null,
+        "unavailable_topic": "period_coverage"
+      },
+      "expected_policy_state": "period_not_in_historical_source",
+      "expected_query_pointer": "experiments/query-intent-v1/expected-queries.json#/cases/7/query",
+      "expected_policy_state_pointer": "experiments/query-intent-v1/expected-queries.json#/cases/7/policy_state"
+    },
+    {
+      "case_id": "E6",
+      "question": "Can this source establish a total carbon mass for the full historical period?",
+      "question_sha256": "df181e0a1017934009aa013f98d79260655624388fdf8992aaa542af5fca9237",
+      "request_sha256": "93d6d999532544ffb7aaa21c2396ebfa76af7e74e2a8965e8413cdc7de1ab4e5",
+      "raw_prompt_utf8_bytes": 2298,
+      "input_token_upper_bound": 2299,
+      "output_reserved_tokens": 640,
+      "extra_safety_tokens": 128,
+      "conservative_context_headroom": 1029,
+      "actual_tokenization_measured": false,
+      "expected_query": {
+        "schema_version": "P12-UCI851-QUERY-1",
+        "operation": "report_missing_or_unresolved_field",
+        "source_labeled_date_from": null,
+        "source_labeled_date_to_exclusive": null,
+        "source_weekstatus": null,
+        "source_load_type": null,
+        "unavailable_topic": "co2_mass"
+      },
+      "expected_policy_state": "valid",
+      "expected_query_pointer": "experiments/query-intent-v1/expected-queries.json#/cases/8/query",
+      "expected_policy_state_pointer": "experiments/query-intent-v1/expected-queries.json#/cases/8/policy_state"
+    },
+    {
+      "case_id": "E7",
+      "question": "Can this source establish energy per tonne of production over the full historical period?",
+      "question_sha256": "7acb27aea98f838f02303273acb155b40116f6d4d279c3cc28e1b973b26d5ca3",
+      "request_sha256": "c852996d64419254bf7287e681d2ce7d37d65ac7eda8fc2fd74c61597e439ccb",
+      "raw_prompt_utf8_bytes": 2310,
+      "input_token_upper_bound": 2311,
+      "output_reserved_tokens": 640,
+      "extra_safety_tokens": 128,
+      "conservative_context_headroom": 1017,
+      "actual_tokenization_measured": false,
+      "expected_query": {
+        "schema_version": "P12-UCI851-QUERY-1",
+        "operation": "report_missing_or_unresolved_field",
+        "source_labeled_date_from": null,
+        "source_labeled_date_to_exclusive": null,
+        "source_weekstatus": null,
+        "source_load_type": null,
+        "unavailable_topic": "energy_per_tonne"
+      },
+      "expected_policy_state": "valid",
+      "expected_query_pointer": "experiments/query-intent-v1/expected-queries.json#/cases/9/query",
+      "expected_policy_state_pointer": "experiments/query-intent-v1/expected-queries.json#/cases/9/policy_state"
+    },
+    {
+      "case_id": "E8",
+      "question": "Can this source establish electricity cost over the full historical period?",
+      "question_sha256": "6ed90307ffe4deebddae8ac04811fec83e4972bc5f41262c95b11d0e055b9a03",
+      "request_sha256": "e941363a513227b527c83a94cdab253126716ffb82e3fb59a76f3f80731b343a",
+      "raw_prompt_utf8_bytes": 2296,
+      "input_token_upper_bound": 2297,
+      "output_reserved_tokens": 640,
+      "extra_safety_tokens": 128,
+      "conservative_context_headroom": 1031,
+      "actual_tokenization_measured": false,
+      "expected_query": {
+        "schema_version": "P12-UCI851-QUERY-1",
+        "operation": "report_missing_or_unresolved_field",
+        "source_labeled_date_from": null,
+        "source_labeled_date_to_exclusive": null,
+        "source_weekstatus": null,
+        "source_load_type": null,
+        "unavailable_topic": "electricity_cost"
+      },
+      "expected_policy_state": "valid",
+      "expected_query_pointer": "experiments/query-intent-v1/expected-queries.json#/cases/10/query",
+      "expected_policy_state_pointer": "experiments/query-intent-v1/expected-queries.json#/cases/10/policy_state"
+    },
+    {
+      "case_id": "E9",
+      "question": "Can this source explain equipment fault causes for rows labeled Maximum_Load?",
+      "question_sha256": "732fac87742f4b673cf870aace182a31a2ac29f9a77bed25ba03e605418c0819",
+      "request_sha256": "e833f50a13f2d30a6584ea8d9f58d2c909807508ee5848fc212a798d3599222d",
+      "raw_prompt_utf8_bytes": 2298,
+      "input_token_upper_bound": 2299,
+      "output_reserved_tokens": 640,
+      "extra_safety_tokens": 128,
+      "conservative_context_headroom": 1029,
+      "actual_tokenization_measured": false,
+      "expected_query": {
+        "schema_version": "P12-UCI851-QUERY-1",
+        "operation": "report_missing_or_unresolved_field",
+        "source_labeled_date_from": null,
+        "source_labeled_date_to_exclusive": null,
+        "source_weekstatus": null,
+        "source_load_type": "Maximum_Load",
+        "unavailable_topic": "equipment_fault_cause"
+      },
+      "expected_policy_state": "valid",
+      "expected_query_pointer": "experiments/query-intent-v1/expected-queries.json#/cases/11/query",
+      "expected_policy_state_pointer": "experiments/query-intent-v1/expected-queries.json#/cases/11/policy_state"
+    }
+  ]
+}

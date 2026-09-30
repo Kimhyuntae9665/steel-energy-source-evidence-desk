@@ -129,7 +129,7 @@ Planned initial batch: **3 declared development questions D1–D3, once each**. 
 
 Actual model generation calls: **3** in the completed development batch, with **0 retries, 0 demo inference and 0 exposed-conformance calls**. UI inspection and native captures trigger none. CPU tests use explicitly labeled in-memory synthetic transport fixtures, never stored under model-results paths and never credited as inference. Original CPU source, policy, arithmetic, evidence and media remain protected by 24 frozen baseline digests.
 
-Current engineering checks: **46 Node tests**, **4 pure protocol/budget tests**, **8 mocked transport-failure tests**, plus [28 actual CPU Chrome authority/offline and synthetic-review checks](evidence/intent-v1/browser-checks.json). Missing/unreadable source, dictionary and policy copies revoke client authority. Preselection calendar/range/outside/partial failures show **Not evaluated**, while covered empty selection shows **0**. [Current partial coverage](docs/intent-v1/scope_not_fully_covered-desktop.png) · [historical source failure](docs/intent-v1/missing-source-historical-desktop.png) · [offline intent at 390px](docs/intent-v1/not-run-intent-mobile-390.png). The separate [six in-memory mock-transport UI checks](evidence/intent-v1/cpu-mock-transport/browser-checks.json) cover semantic-review clarity, two confirmations, exact export binding, delayed/stale/repeated review, field-specific rejection and keyboard/mobile behavior. Those fixtures are explicitly synthetic CPU test inputs, not model outputs. [CPU-mock review-flow evidence](evidence/intent-v1/cpu-mock-transport/browser-checks.json) exercises staged review, exact receipts, stale replacement, delayed/repeated actions, keyboard focus and field-specific rejections; these are not model outputs. The preserved [mobile overflow reproduction](evidence/intent-v1/before-mobile-repair/before-mobile-repair.json) precedes the wrapping fix. Browser checks are bounded engineering evidence, not accessibility certification.
+Current engineering checks: **46 Node tests**, **4 pure protocol/budget tests**, **8 mocked transport-failure tests**, plus [28 actual CPU Chrome authority/offline and synthetic-review checks](evidence/intent-v1/browser-checks.json). Missing/unreadable source, dictionary and policy copies revoke client authority. Preselection calendar/range/outside/partial failures show **Not evaluated**, while covered empty selection shows **0**. [Current partial coverage](docs/intent-v1/scope_not_fully_covered-desktop.png) · [historical source failure](docs/intent-v1/missing-source-historical-desktop.png) · [offline intent at 390px](docs/intent-v1/not-run-intent-mobile-390.png). The separate [six in-memory mock-transport UI checks](evidence/intent-v1/cpu-mock-transport/browser-checks.json) cover semantic-review clarity, two confirmations, exact export binding, delayed/stale/repeated review, field-specific rejection and keyboard/mobile behavior. Those fixtures are explicitly synthetic CPU test inputs, not model outputs. The preserved [mobile overflow reproduction](evidence/intent-v1/before-mobile-repair/before-mobile-repair.json) precedes the wrapping fix. Browser checks are bounded engineering evidence, not accessibility certification.
 
 ```sh
 python3 scripts/test-intent-protocol.py
@@ -147,6 +147,8 @@ Frozen method commit: [`4b027eb92fe4208d43bc64cbe9f573d0b66dad03`](https://githu
 
 Three scheduled/attempted/completed HTTP200 requests: **3/3 strict raw intents, 21/21 raw fields, 3/3 structurally valid, 3/3 policy-allowed, 0 unexpected fields**. There were no failures, retries or additional inference calls. This checks only the three declared full-source development questions under this prompt/schema; it does not establish general natural-language accuracy. The nine exposed conformance questions remain **not run** and require a separate explicit handover despite the development gate passing.
 
+The literal **21/21** consists of **three operation choices, three schema-version values, and fifteen null filter/topic values**. These three full-source questions provide no model-tested evidence of date extraction, category-filter selection, invalid/outside-date preservation, or unknown-topic routing. The result establishes the disclosed development mappings only; backend arithmetic and synthetic regressions supply separate evidence.
+
 | Case | Raw operation | API input/output tokens | Local request elapsed |
 |---|---|---:|---:|
 | D1 | sum_source_usage_kwh | 513 / 71 | 3149.28ms |
@@ -158,6 +160,21 @@ These are retained API counts and local request timings, not production latency 
 [Actual raw proposal/human review](docs/intent-v1/actual-stored-development/raw-proposal-human-review.png) · [separate CPU result](docs/intent-v1/actual-stored-development/human-reviewed-cpu-result.png) · [native stored-intent video](docs/intent-v1/actual-stored-development/stored-intent-cpu-demo.mp4). Captures use stored actual output and add **0 inference calls**; synthetic regression screenshots remain separately labeled. [Media identity manifest](evidence/intent-v1/media-manifest.json) records file hashes. No confirmed Library media IDs are available: the supported desktop upload helper cannot start because that desktop has no Python runtime. The verified public repository copies remain available.
 
 The lease was explicitly released after all three durable completion records, a free shared lock, absent timeout barrier, zero loaded models and zero GPU compute processes were verified.
+
+## CPU readiness for the separate exposed-conformance batch
+
+[Write-once readiness manifest](experiments/query-intent-v1/exposed-conformance-readiness.json) binds the unchanged E1–E9 question text, canonical request digests, per-request input bounds/headroom, exact seven-field labels and expected policy states to the existing freeze. Preparation makes **0 generation calls** and grants no inference resources. The nine already-exposed questions remain **not run** until a separate explicit handover; they are not an unseen benchmark.
+
+The same grading retains **63 raw fields across 9 scheduled cases**, with strict full-query matches, structural validity and policy permission reported separately. Failed or absent outputs remain in their scheduled denominators; deterministic repair receives zero model credit. Runtime remains context 4096/output 640, timeout 60 seconds, concurrency 1, retries 0 and demos 0. Prompt, schema, questions, disclosed labels, scoring, all 19 frozen method files, 24 protected baseline files, and existing development results remain unchanged.
+
+This prepared set does not test every route: `source_weekstatus` is null in all nine labels; E3 requests a comparison operation rather than a WeekStatus filter. `count_source_rows` appears in neither the three executed development cases nor the nine prepared cases, so it remains untested by model output. The planned date, Load_Type-filter and unavailable-topic mappings are pending evidence, not reported successes.
+
+```sh
+# Pure CPU construction once; refuses to overwrite an existing manifest.
+python3 scripts/prepare-exposed-conformance.py
+# Pure CPU identity/budget verification after preparation; no model call.
+python3 scripts/prepare-exposed-conformance.py --check
+```
 
 ## Deployment limits
 
