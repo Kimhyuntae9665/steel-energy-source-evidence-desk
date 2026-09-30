@@ -1,0 +1,10 @@
+{
+  "base_commit": "29ccb12c1a205512f4dd468c7aed9714e5150cda",
+  "staged_files_scanned": 148,
+  "history_text_blobs_scanned": 116,
+  "history_commits_scanned": 6,
+  "violations": [],
+  "frozen_method_files_verified": 19,
+  "protected_baseline_files_verified": 24,
+  "model_calls_added": 0
+}

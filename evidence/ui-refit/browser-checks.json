@@ -1,0 +1,174 @@
+{
+  "kind": "Actual local CPU-only Chrome UI v2 engineering checks, not GitHub CI Chrome runs",
+  "model_calls_added": 0,
+  "synthetic_model_outputs": 0,
+  "checks_passed": 16,
+  "checks": [
+    {
+      "check": "Approved exact tokens and equal visible source/result panels",
+      "status": "passed",
+      "details": {
+        "bg": "rgb(241, 244, 246)",
+        "title": "36px",
+        "width": 1120,
+        "panels": [
+          {
+            "w": 526,
+            "bg": "rgb(255, 255, 255)"
+          },
+          {
+            "w": 526,
+            "bg": "rgb(255, 255, 255)"
+          }
+        ]
+      }
+    },
+    {
+      "check": "Seven exact query fields; Jan15 CPU sum 3968.64, 96 original-order rows and midnight retained",
+      "status": "passed",
+      "details": null
+    },
+    {
+      "check": "Actual JSON download exact binding; confirmation withdrawal; Tab/Enter retained focus; repeated fingerprint stable",
+      "status": "passed",
+      "details": null
+    },
+    {
+      "check": "Invalid calendar/range/outside/partial preserve Not evaluated; covered empty selection is 0",
+      "status": "passed",
+      "details": null
+    },
+    {
+      "check": "Unavailable carbon unit remains unresolved; no chart/number invented",
+      "status": "passed",
+      "details": null
+    },
+    {
+      "check": "Actual stored D1 reviewed; separate source confirmation required; full-source arithmetic credited only to CPU",
+      "status": "passed",
+      "details": null
+    },
+    {
+      "check": "Stored actual semantically wrong E3 Weekday narrowing withheld human acceptance; no automatic execution",
+      "status": "passed",
+      "details": null
+    },
+    {
+      "check": "Actual E4 invalid preserved date receives field-specific policy rejection",
+      "status": "passed",
+      "details": null
+    },
+    {
+      "check": "Delayed changed query remains previous evidence and preserves later focus",
+      "status": "passed",
+      "details": null
+    },
+    {
+      "check": "Actual owned source read failure revokes authority and retains unchanged historical answer",
+      "status": "passed",
+      "details": null
+    },
+    {
+      "check": "Actual owned dictionary read failure revokes authority and retains unchanged historical answer",
+      "status": "passed",
+      "details": null
+    },
+    {
+      "check": "Actual owned policy read failure revokes authority and retains unchanged historical answer",
+      "status": "passed",
+      "details": null
+    },
+    {
+      "check": "Actual delayed startup intent-list read failure revokes already executed manual result",
+      "status": "passed",
+      "details": null
+    },
+    {
+      "check": "Native chart raw tooltip identical across timezones",
+      "status": "passed",
+      "details": "Raw source date label 15/01/2018: 3968.64 kWh · 96 rows"
+    },
+    {
+      "check": "Actual 390px single-line Korean title, no page overflow, 14px+ evidence and horizontally scrollable chart/ledger",
+      "status": "passed",
+      "details": {
+        "page": 390,
+        "viewport": 390,
+        "title": "28px",
+        "titleWidth": 358,
+        "titleClient": 358,
+        "chart": 1200,
+        "minText": 14
+      }
+    },
+    {
+      "check": "No unhandled desktop Chrome exceptions; zero generation requests",
+      "status": "passed",
+      "details": null
+    }
+  ],
+  "source_csv_sha256": "9b1cee6f9cb9cd9df2b95814ca90a9a2ff15b7f5f1fba0fae3c643e82072eacc",
+  "screenshots": [
+    {
+      "path": "docs/ui-refit/01-admission-audit.png",
+      "sha256": "8a347a0ce34a7e8742b8fccb33c242e3278c002ed51711e5ccc133da217825d9",
+      "bytes": 218647,
+      "provenance": "Actual native Chrome, UI v2, admitted original UCI bytes or owned-copy read fault, stored actual model output only. No generation."
+    },
+    {
+      "path": "docs/ui-refit/02-manual-date-query.png",
+      "sha256": "45ae72c7bee3828a37a765a3563d8b2867b16405ea4624b5d692a9710667d91f",
+      "bytes": 221796,
+      "provenance": "Actual native Chrome, UI v2, admitted original UCI bytes or owned-copy read fault, stored actual model output only. No generation."
+    },
+    {
+      "path": "docs/ui-refit/03-jan15-chart-ledger.png",
+      "sha256": "00aa53df57abc2579b67e7eef391e010d847b74b3d9b350af8533dcb791b6225",
+      "bytes": 244928,
+      "provenance": "Actual native Chrome, UI v2, admitted original UCI bytes or owned-copy read fault, stored actual model output only. No generation."
+    },
+    {
+      "path": "docs/ui-refit/04-receipt-history.png",
+      "sha256": "a24a915d2dba5550e7c038833a2a0919fbe4b8d572b1597c4c500ea6d84b16bf",
+      "bytes": 211759,
+      "provenance": "Actual native Chrome, UI v2, admitted original UCI bytes or owned-copy read fault, stored actual model output only. No generation."
+    },
+    {
+      "path": "docs/ui-refit/05-partial-not-evaluated.png",
+      "sha256": "b4dbef6b88a5b1860b9c2d14a40ff0e1dad39ef5454a59ad2a29fd3626a15e19",
+      "bytes": 165165,
+      "provenance": "Actual native Chrome, UI v2, admitted original UCI bytes or owned-copy read fault, stored actual model output only. No generation."
+    },
+    {
+      "path": "docs/ui-refit/06-unresolved-carbon.png",
+      "sha256": "741238a10adc306edeb2f458adbd72647159b7d41d66fb8d79e71c15896cf449",
+      "bytes": 200836,
+      "provenance": "Actual native Chrome, UI v2, admitted original UCI bytes or owned-copy read fault, stored actual model output only. No generation."
+    },
+    {
+      "path": "docs/ui-refit/07-stored-actual-proposal.png",
+      "sha256": "431cc86b2a8991d2a128287ef6ecf4e7341c27c2c030c126bca5d9ecfa0f3aa9",
+      "bytes": 120602,
+      "provenance": "Actual native Chrome, UI v2, admitted original UCI bytes or owned-copy read fault, stored actual model output only. No generation."
+    },
+    {
+      "path": "docs/ui-refit/08-e3-meaning-not-accepted.png",
+      "sha256": "c01f5a52550cea6193bf3233f256d056558bdef48442d8d0390c140b779e0e25",
+      "bytes": 126307,
+      "provenance": "Actual native Chrome, UI v2, admitted original UCI bytes or owned-copy read fault, stored actual model output only. No generation."
+    },
+    {
+      "path": "docs/ui-refit/09-source-unavailable-historical.png",
+      "sha256": "c58f0dc9cdc662a5224a7540648d92caf7d436ffdd006771a786ca70769725e6",
+      "bytes": 170207,
+      "provenance": "Actual native Chrome, UI v2, admitted original UCI bytes or owned-copy read fault, stored actual model output only. No generation."
+    },
+    {
+      "path": "docs/ui-refit/10-mobile-390.png",
+      "sha256": "84253e8337ba1b5864c6a0bd63a60d77691e6dc9a2c581683b8e283f32e78f30",
+      "bytes": 443254,
+      "provenance": "Actual native Chrome, UI v2, admitted original UCI bytes or owned-copy read fault, stored actual model output only. No generation."
+    }
+  ],
+  "video": "No new video; existing videos explicitly historical. Native screenshots contain no fabricated output."
+}

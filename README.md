@@ -1,12 +1,64 @@
 ![Main CPU evidence flow: CSV to Audit and Query, Query to Chart and Receipt](docs/intent-v1/architecture-current.png)
 
-# Steel energy source evidence desk · P12
+# 에너지 근거 검토 · P12
+
+The unchanged native architecture diagram remains first. The current versioned UI places admitted source/audit/rows beside the confirmed query, exact CPU result and native chart. Original bytes, seven-field policy, semantic review, separate source confirmation and authority revocation remain unchanged. This UI/media update adds **0 model calls**; the frozen development and exposed-conformance batches remain **3 + 9 = 12 calls**, with 0 retries and 0 demo inference.
+
+Run the current presentation with `node ui-v2/server.mjs`, then open `http://127.0.0.1:5162`. `npm start` serves the preserved historical presentation on port 5120. Node 20+; no application dependencies or new downloads. [Feature inventory](docs/ui-refit/feature-inventory.md) · [16 actual local Chrome checks](evidence/ui-refit/browser-checks.json) · [exact current and historical media identities](evidence/ui-refit/media-manifest.json). The **47 Node tests** include one overlay-route integration regression; GitHub CI runs CPU checks. Chrome checks and captures ran separately in the existing local capture environment, not in GitHub CI.
+
+현재 원본 입장·품질 감사.
+
+![현재 원본 입장과 품질 감사](docs/ui-refit/01-admission-audit.png)
+
+날짜와 정확한 7필드 질의.
+
+![현재 수동 날짜와 질의](docs/ui-refit/02-manual-date-query.png)
+
+1월 15일 CPU 합계·원본 행·차트.
+
+![현재 1월 15일 결과와 원본 행](docs/ui-refit/03-jan15-chart-ledger.png)
+
+정확한 영수증과 세션 기록.
+
+![현재 영수증과 세션 기록](docs/ui-refit/04-receipt-history.png)
+
+부분 범위: Not evaluated.
+
+![현재 부분 범위와 평가 미실시](docs/ui-refit/05-partial-not-evaluated.png)
+
+탄소 단위: 미해결.
+
+![현재 미해결 탄소 단위](docs/ui-refit/06-unresolved-carbon.png)
+
+저장된 실제 D1 제안의 의미 검토.
+
+![현재 저장된 실제 제안 검토](docs/ui-refit/07-stored-actual-proposal.png)
+
+실제 E3의 잘못된 Weekday 제한: 수락 보류.
+
+![현재 E3 의미 해석 수락 보류](docs/ui-refit/08-e3-meaning-not-accepted.png)
+
+원본 읽기 실패: 과거 근거만 보존.
+
+![현재 소스 권한 취소와 과거 근거](docs/ui-refit/09-source-unavailable-historical.png)
+
+390px 실제 브라우저 화면.
+
+![현재 390px 모바일 화면](docs/ui-refit/10-mobile-390.png)
+
+These are new native browser screenshots. D1 and E3 use unchanged stored actual outputs; E3's erroneous extra Weekday filter receives no human acceptance in the capture. E4's preserved invalid date is also checked for policy rejection. No generated replacement or synthetic output is presented as a model result. The result `3968.64` and all row counts are credited only to deterministic CPU computation. The native chart uses approximate geometry and unconverted source labels. Source/dictionary/policy faults affect only owned test copies; originals remain identical.
+
+All media under `docs/` and `docs/intent-v1/` outside `docs/ui-refit/` below are **historical** captures/diagrams. The two existing CPU/native stored-intent videos are historical, unchanged, and do not show this refit. No new video was recorded. Their receipt/acknowledgment captions do not establish target import or operational authority. No Library upload was attempted during this update; the previously documented desktop transfer blocker remains.
+
+## Preserved source, architecture and experiment evidence
+
+### Steel energy source evidence desk · P12
 
 A native evidence desk for the public UCI Steel Industry Energy Consumption dataset. Admit pinned original bytes, inspect data-quality limits, confirm a visible allowlisted query, and follow its exact decimal answer back to every contributing CSV row. The first diagram shows the original main CPU path; the optional stored-intent review branch is documented separately below. All glyphs are original generic artwork. [Current editable SVG](docs/intent-v1/architecture-current.svg) · [current glyph provenance](docs/intent-v1/asset-provenance.json). The original [baseline SVG](docs/architecture.svg) and [PNG](docs/architecture.png) remain unchanged; the new derivative enlarges only labels for narrow published rendering.
 
 This is an executed **historical-data prototype with CPU arithmetic** and a separately frozen optional stored-query-intent branch. The optional development batch used **3 generation calls** under an explicit resource handover. It has no live connection, SQL generation, equipment control or carbon/billing authority. The source labels refer to 2018; they are not current readings. No throughput, ROI, savings or fault-diagnosis claim is made.
 
-## Actual native demo
+## Historical native demo
 
 ![Confirmed January query and exact source evidence](docs/energy-desktop.png)
 
@@ -115,7 +167,7 @@ The original 30 Node tests cover source integrity, exact decimals, BOM/header pr
 
 All 12 disclosed CPU conformance cases executed. Their expected meanings were already exposed, so they are **not an independently unseen benchmark**. The optional protocol below was frozen before inference; its separately reported three-case development batch is now complete.
 
-## Optional stored query intent · frozen before inference
+## Optional stored query intent · frozen before inference (historical media)
 
 ![Stored Intent to human Review to visible Query builder](docs/intent-v1/optional-branch.png)
 
@@ -129,7 +181,7 @@ Planned initial batch: **3 declared development questions D1–D3, once each**. 
 
 Actual model generation calls: **12** across the separate completed three-case development and nine-case exposed-conformance batches, with **0 retries and 0 demo inference**. UI inspection and native captures trigger none. CPU tests use explicitly labeled in-memory synthetic transport fixtures, never stored under model-results paths and never credited as inference. Original CPU source, policy, arithmetic, evidence and media remain protected by 24 frozen baseline digests.
 
-Current engineering checks: **46 Node tests**, **4 pure protocol/budget tests**, **8 mocked transport-failure tests**, plus [28 actual CPU Chrome authority/offline and synthetic-review checks](evidence/intent-v1/browser-checks.json). Missing/unreadable source, dictionary and policy copies revoke client authority. Preselection calendar/range/outside/partial failures show **Not evaluated**, while covered empty selection shows **0**. [Current partial coverage](docs/intent-v1/scope_not_fully_covered-desktop.png) · [historical source failure](docs/intent-v1/missing-source-historical-desktop.png) · [offline intent at 390px](docs/intent-v1/not-run-intent-mobile-390.png). The separate [six in-memory mock-transport UI checks](evidence/intent-v1/cpu-mock-transport/browser-checks.json) cover semantic-review clarity, two confirmations, exact export binding, delayed/stale/repeated review, field-specific rejection and keyboard/mobile behavior. Those fixtures are explicitly synthetic CPU test inputs, not model outputs. The preserved [mobile overflow reproduction](evidence/intent-v1/before-mobile-repair/before-mobile-repair.json) precedes the wrapping fix. Browser checks are bounded engineering evidence, not accessibility certification.
+Prior engineering checks: **46 Node tests**, **4 pure protocol/budget tests**, **8 mocked transport-failure tests**, plus [28 actual CPU Chrome authority/offline and synthetic-review checks](evidence/intent-v1/browser-checks.json). Missing/unreadable source, dictionary and policy copies revoke client authority. Preselection calendar/range/outside/partial failures show **Not evaluated**, while covered empty selection shows **0**. [Historical corrected partial coverage](docs/intent-v1/scope_not_fully_covered-desktop.png) · [historical source failure](docs/intent-v1/missing-source-historical-desktop.png) · [offline intent at 390px](docs/intent-v1/not-run-intent-mobile-390.png). The separate [six in-memory mock-transport UI checks](evidence/intent-v1/cpu-mock-transport/browser-checks.json) cover semantic-review clarity, two confirmations, exact export binding, delayed/stale/repeated review, field-specific rejection and keyboard/mobile behavior. Those fixtures are explicitly synthetic CPU test inputs, not model outputs. The preserved [mobile overflow reproduction](evidence/intent-v1/before-mobile-repair/before-mobile-repair.json) precedes the wrapping fix. Browser checks are bounded engineering evidence, not accessibility certification.
 
 ```sh
 python3 scripts/test-intent-protocol.py

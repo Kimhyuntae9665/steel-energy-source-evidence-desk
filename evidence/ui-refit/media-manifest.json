@@ -1,0 +1,174 @@
+{
+  "base_commit": "29ccb12c1a205512f4dd468c7aed9714e5150cda",
+  "model_calls_added": 0,
+  "frozen_total_model_calls": 12,
+  "new_native_screenshots": 10,
+  "new_video": false,
+  "existing_videos": "Historical presentations; no UI v2 footage, no target import or operational-action proof",
+  "native_chrome_checks": 16,
+  "chrome_execution": "Local installed Chrome; separate from GitHub CPU CI",
+  "library_upload": "No new upload attempted; no new Library IDs",
+  "files": [
+    {
+      "path": "docs/ui-refit/01-admission-audit.png",
+      "bytes": 218647,
+      "sha256": "8a347a0ce34a7e8742b8fccb33c242e3278c002ed51711e5ccc133da217825d9",
+      "state": "current UI v2",
+      "provenance": "Versioned UI source or actual native Chrome engineering capture; no fabricated or newly generated model outputs"
+    },
+    {
+      "path": "docs/ui-refit/02-manual-date-query.png",
+      "bytes": 221796,
+      "sha256": "45ae72c7bee3828a37a765a3563d8b2867b16405ea4624b5d692a9710667d91f",
+      "state": "current UI v2",
+      "provenance": "Versioned UI source or actual native Chrome engineering capture; no fabricated or newly generated model outputs"
+    },
+    {
+      "path": "docs/ui-refit/03-jan15-chart-ledger.png",
+      "bytes": 244928,
+      "sha256": "00aa53df57abc2579b67e7eef391e010d847b74b3d9b350af8533dcb791b6225",
+      "state": "current UI v2",
+      "provenance": "Versioned UI source or actual native Chrome engineering capture; no fabricated or newly generated model outputs"
+    },
+    {
+      "path": "docs/ui-refit/04-receipt-history.png",
+      "bytes": 211759,
+      "sha256": "a24a915d2dba5550e7c038833a2a0919fbe4b8d572b1597c4c500ea6d84b16bf",
+      "state": "current UI v2",
+      "provenance": "Versioned UI source or actual native Chrome engineering capture; no fabricated or newly generated model outputs"
+    },
+    {
+      "path": "docs/ui-refit/05-partial-not-evaluated.png",
+      "bytes": 165165,
+      "sha256": "b4dbef6b88a5b1860b9c2d14a40ff0e1dad39ef5454a59ad2a29fd3626a15e19",
+      "state": "current UI v2",
+      "provenance": "Versioned UI source or actual native Chrome engineering capture; no fabricated or newly generated model outputs"
+    },
+    {
+      "path": "docs/ui-refit/06-unresolved-carbon.png",
+      "bytes": 200836,
+      "sha256": "741238a10adc306edeb2f458adbd72647159b7d41d66fb8d79e71c15896cf449",
+      "state": "current UI v2",
+      "provenance": "Versioned UI source or actual native Chrome engineering capture; no fabricated or newly generated model outputs"
+    },
+    {
+      "path": "docs/ui-refit/07-stored-actual-proposal.png",
+      "bytes": 120602,
+      "sha256": "431cc86b2a8991d2a128287ef6ecf4e7341c27c2c030c126bca5d9ecfa0f3aa9",
+      "state": "current UI v2",
+      "provenance": "Versioned UI source or actual native Chrome engineering capture; no fabricated or newly generated model outputs"
+    },
+    {
+      "path": "docs/ui-refit/08-e3-meaning-not-accepted.png",
+      "bytes": 126307,
+      "sha256": "c01f5a52550cea6193bf3233f256d056558bdef48442d8d0390c140b779e0e25",
+      "state": "current UI v2",
+      "provenance": "Versioned UI source or actual native Chrome engineering capture; no fabricated or newly generated model outputs"
+    },
+    {
+      "path": "docs/ui-refit/09-source-unavailable-historical.png",
+      "bytes": 170207,
+      "sha256": "c58f0dc9cdc662a5224a7540648d92caf7d436ffdd006771a786ca70769725e6",
+      "state": "current UI v2",
+      "provenance": "Versioned UI source or actual native Chrome engineering capture; no fabricated or newly generated model outputs"
+    },
+    {
+      "path": "docs/ui-refit/10-mobile-390.png",
+      "bytes": 443254,
+      "sha256": "84253e8337ba1b5864c6a0bd63a60d77691e6dc9a2c581683b8e283f32e78f30",
+      "state": "current UI v2",
+      "provenance": "Versioned UI source or actual native Chrome engineering capture; no fabricated or newly generated model outputs"
+    },
+    {
+      "path": "ui-v2/index.html",
+      "bytes": 8003,
+      "sha256": "b7f48ce9a7bd2815cc37f2cd65f6727c564d2c9b29d3543282dfd2708e9fd9a9",
+      "state": "current UI v2",
+      "provenance": "Versioned UI source or actual native Chrome engineering capture; no fabricated or newly generated model outputs"
+    },
+    {
+      "path": "ui-v2/style.css",
+      "bytes": 5193,
+      "sha256": "2661e8cb822f711a313778b62014d846a7aab5910679f3f5c4b789d9fb15e64c",
+      "state": "current UI v2",
+      "provenance": "Versioned UI source or actual native Chrome engineering capture; no fabricated or newly generated model outputs"
+    },
+    {
+      "path": "ui-v2/server.mjs",
+      "bytes": 1190,
+      "sha256": "dc06643a120d319d1cee9e99c811d3249e7c875287c2fa7a9b21731163a3a56f",
+      "state": "current UI v2",
+      "provenance": "Versioned UI source or actual native Chrome engineering capture; no fabricated or newly generated model outputs"
+    },
+    {
+      "path": "scripts/browser-ui-refit.py",
+      "bytes": 16655,
+      "sha256": "c7433475ef3117be8321efcb368b9023540c4bae894b8e4e0b700159b89a0a38",
+      "state": "current UI v2",
+      "provenance": "Versioned UI source or actual native Chrome engineering capture; no fabricated or newly generated model outputs"
+    },
+    {
+      "path": "test/ui-refit.test.mjs",
+      "bytes": 2398,
+      "sha256": "e43280eb031d70b09f3f1816d7b49d49f992f46b3d3cc6554be485b38ebeb067",
+      "state": "current UI v2",
+      "provenance": "Versioned UI source or actual native Chrome engineering capture; no fabricated or newly generated model outputs"
+    },
+    {
+      "path": "docs/ui-refit/feature-inventory.md",
+      "bytes": 2165,
+      "sha256": "352d5073c8506bffc1b8fa179cbfe55ff0cf9f5eb556da008be6516bc5e8813a",
+      "state": "current UI v2",
+      "provenance": "Versioned UI source or actual native Chrome engineering capture; no fabricated or newly generated model outputs"
+    },
+    {
+      "path": "evidence/ui-refit/browser-checks.json",
+      "bytes": 6904,
+      "sha256": "4bba1c7448a422128dfd31e845dfd375846ba64f80ec759101f11388f24cb5af",
+      "state": "current UI v2",
+      "provenance": "Versioned UI source or actual native Chrome engineering capture; no fabricated or newly generated model outputs"
+    },
+    {
+      "path": "docs/architecture.png",
+      "bytes": 37850,
+      "sha256": "37ea8e6c3132812365e0ea74a70f168cadaaf2c73e227540e6c1524e0a8a825a",
+      "state": "historical unchanged",
+      "provenance": "Original repository native browser/video or generic artwork; unchanged historical bytes"
+    },
+    {
+      "path": "docs/architecture.svg",
+      "bytes": 3469,
+      "sha256": "6b119c52040faa551ac580254f3b71b49d55092c77dd0434c1075862f632379a",
+      "state": "historical unchanged",
+      "provenance": "Original repository native browser/video or generic artwork; unchanged historical bytes"
+    },
+    {
+      "path": "docs/intent-v1/architecture-current.png",
+      "bytes": 41318,
+      "sha256": "0fff46e48a0f47eee7a891c2ff0c5b438084c213710d8ddb2aab9b8c1d618e6a",
+      "state": "historical unchanged",
+      "provenance": "Original repository native browser/video or generic artwork; unchanged historical bytes"
+    },
+    {
+      "path": "docs/intent-v1/architecture-current.svg",
+      "bytes": 3469,
+      "sha256": "02dc82ec8a1f00cfd15c7490e12799a318ffef10e600e6ffa2694b817ca7c181",
+      "state": "historical unchanged",
+      "provenance": "Original repository native browser/video or generic artwork; unchanged historical bytes"
+    },
+    {
+      "path": "docs/cpu-demo.mp4",
+      "bytes": 559196,
+      "sha256": "097835471c7de48926e16d2af5fb3cc50ae76d7a735535039b09984f23bc6399",
+      "state": "historical unchanged",
+      "provenance": "Original repository native browser/video or generic artwork; unchanged historical bytes"
+    },
+    {
+      "path": "docs/intent-v1/actual-stored-development/stored-intent-cpu-demo.mp4",
+      "bytes": 284186,
+      "sha256": "481e153de4b94c9a61f8d90d988b80533ca4ff938ebc784cb86d806d4cd98f84",
+      "state": "historical unchanged",
+      "provenance": "Original repository native browser/video or generic artwork; unchanged historical bytes"
+    }
+  ]
+}
