@@ -1,0 +1,13 @@
+{
+  "base_ui_commit": "3f5a28c931586b24151dd8dfcae8ab0af001ddc2",
+  "staged_files_scanned": 153,
+  "history_text_blobs_scanned": 129,
+  "history_commits_scanned": 8,
+  "violations": [],
+  "runtime_sources_unchanged": 7,
+  "frozen_method_files_unchanged": 19,
+  "protected_baseline_files_unchanged": 24,
+  "prior_ten_screenshots_and_videos_unchanged": true,
+  "additional_native_screenshots": 2,
+  "model_calls_added": 0
+}

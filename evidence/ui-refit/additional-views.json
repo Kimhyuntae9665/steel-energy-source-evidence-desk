@@ -1,0 +1,93 @@
+{
+  "kind": "Two additional actual local CPU Chrome views using existing admitted source/UI; not GitHub CI Chrome runs",
+  "captured_ui_source_reference_commit": "3f5a28c931586b24151dd8dfcae8ab0af001ddc2",
+  "model_calls_added": 0,
+  "existing_screenshots_regenerated": false,
+  "video_regenerated": false,
+  "runtime_sources_changed": false,
+  "source_csv_sha256": "9b1cee6f9cb9cd9df2b95814ca90a9a2ff15b7f5f1fba0fae3c643e82072eacc",
+  "checks_passed": 2,
+  "checks": [
+    {
+      "check": "Valid covered Jan6 source scope AND Weekday filter selects zero rows; empty sum remains null",
+      "status": "passed",
+      "query": {
+        "schema_version": "P12-UCI851-QUERY-1",
+        "operation": "sum_source_usage_kwh",
+        "source_labeled_date_from": "2018-01-06",
+        "source_labeled_date_to_exclusive": "2018-01-07",
+        "source_weekstatus": "Weekday",
+        "source_load_type": null,
+        "unavailable_topic": null
+      },
+      "source_day_original_rows": 96,
+      "answer": {
+        "status": "empty_selection",
+        "reason": null,
+        "answer": {
+          "count": 0,
+          "value": null,
+          "row_count": 0,
+          "day_count": 0,
+          "usage_kwh_exact": null
+        }
+      },
+      "visible_metrics": [
+        "No numeric answer",
+        "0",
+        "0",
+        "0"
+      ],
+      "source_count_is_not_missing_measurement": true
+    },
+    {
+      "check": "Known stored source value 0 remains valid with exact row/file pointer and original 23:45 to 00:00 order",
+      "status": "passed",
+      "data_row_number": 29856,
+      "file_line": 29857,
+      "row_id": "csv-line-29857",
+      "source_date": "07/11/2018 00:00",
+      "stored_source_value": "0",
+      "usage_status": "valid",
+      "source_span": {
+        "byte_start": 2325780,
+        "byte_end": 2325839,
+        "byte_end_with_newline": 2325841,
+        "line_start": 29857,
+        "line_end": 29857
+      },
+      "original_order_audit_finding": {
+        "previous_row_id": "csv-line-29856",
+        "row_id": "csv-line-29857",
+        "previous_source_date": "07/11/2018 23:45",
+        "source_date": "07/11/2018 00:00",
+        "jump_seconds": -85500
+      },
+      "query": {
+        "schema_version": "P12-UCI851-QUERY-1",
+        "operation": "count_source_rows",
+        "source_labeled_date_from": "2018-11-07",
+        "source_labeled_date_to_exclusive": "2018-11-08",
+        "source_weekstatus": null,
+        "source_load_type": null,
+        "unavailable_topic": null
+      },
+      "physical_zero_consumption": "not verified",
+      "arithmetic_model_credit": 0
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "docs/ui-refit/11-covered-empty-selection.png",
+      "bytes": 152575,
+      "sha256": "e6b15b527a9ac0ce44bdbc4d8d75a98e33e9621218371e7f06f57534f0609041",
+      "provenance": "Actual native Chrome against unchanged admitted source and UI; existing allowlisted operations only; no model call or previous media regeneration"
+    },
+    {
+      "path": "docs/ui-refit/12-stored-source-value-zero.png",
+      "bytes": 214918,
+      "sha256": "df105823a24f7a22675f9c9c6c68cbdbd9e3f0232c6a17e9fc32eac805d56a42",
+      "provenance": "Actual native Chrome against unchanged admitted source and UI; existing allowlisted operations only; no model call or previous media regeneration"
+    }
+  ]
+}

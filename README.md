@@ -4,7 +4,7 @@
 
 The unchanged native architecture diagram remains first. The current versioned UI places admitted source/audit/rows beside the confirmed query, exact CPU result and native chart. Original bytes, seven-field policy, semantic review, separate source confirmation and authority revocation remain unchanged. This UI/media update adds **0 model calls**; the frozen development and exposed-conformance batches remain **3 + 9 = 12 calls**, with 0 retries and 0 demo inference.
 
-Run the current presentation with `node ui-v2/server.mjs`, then open `http://127.0.0.1:5162`. `npm start` serves the preserved historical presentation on port 5120. Node 20+; no application dependencies or new downloads. [Feature inventory](docs/ui-refit/feature-inventory.md) · [16 actual local Chrome checks](evidence/ui-refit/browser-checks.json) · [exact current and historical media identities](evidence/ui-refit/media-manifest.json). The **47 Node tests** include one overlay-route integration regression; GitHub CI runs CPU checks. Chrome checks and captures ran separately in the existing local capture environment, not in GitHub CI.
+Run the current presentation with `node ui-v2/server.mjs`, then open `http://127.0.0.1:5162`. `npm start` serves the preserved historical presentation on port 5120. Node 20+; no application dependencies or new downloads. [Feature inventory](docs/ui-refit/feature-inventory.md) · [16 original actual local Chrome checks](evidence/ui-refit/browser-checks.json) · [2 additional native Chrome views](evidence/ui-refit/additional-views.json) · [exact current and historical media identities](evidence/ui-refit/media-manifest.json). The **47 Node tests** include one overlay-route integration regression; GitHub CI runs CPU checks. Chrome checks and captures ran separately in the existing local capture environment, not in GitHub CI.
 
 현재 원본 입장·품질 감사.
 
@@ -18,9 +18,21 @@ Run the current presentation with `node ui-v2/server.mjs`, then open `http://127
 
 ![현재 1월 15일 결과와 원본 행](docs/ui-refit/03-jan15-chart-ledger.png)
 
+저장된 원본 셀 값 0 · 물리 소비량 미확인.
+
+![현재 저장된 원본 셀 값 0](docs/ui-refit/12-stored-source-value-zero.png)
+
+원본 데이터 행 29856 · 파일 줄 29857 (`csv-line-29857`) · `07/11/2018 00:00`. 원본 표기 `Usage_kWh="0"`와 유효 상태를 보존하며, 물리적 소비량이 0이었다고 검증하지 않습니다.
+
 정확한 영수증과 세션 기록.
 
 ![현재 영수증과 세션 기록](docs/ui-refit/04-receipt-history.png)
+
+유효한 범위의 빈 선택: 0행 · 합계 null.
+
+![현재 유효한 범위의 빈 선택](docs/ui-refit/11-covered-empty-selection.png)
+
+원본 범위 `[2018-01-06, 2018-01-07)`에 `Weekday` 필터를 AND로 적용한 기존 질의입니다. 선택된 행이 없으므로 합계는 null이며, 저장된 원본 셀 값 0과 구분됩니다.
 
 부분 범위: Not evaluated.
 
@@ -46,7 +58,7 @@ Run the current presentation with `node ui-v2/server.mjs`, then open `http://127
 
 ![현재 390px 모바일 화면](docs/ui-refit/10-mobile-390.png)
 
-These are new native browser screenshots. D1 and E3 use unchanged stored actual outputs; E3's erroneous extra Weekday filter receives no human acceptance in the capture. E4's preserved invalid date is also checked for policy rejection. No generated replacement or synthetic output is presented as a model result. The result `3968.64` and all row counts are credited only to deterministic CPU computation. The native chart uses approximate geometry and unconverted source labels. Source/dictionary/policy faults affect only owned test copies; originals remain identical.
+These are 12 current native browser screenshots. The two added empty-selection/stored-value views use the existing allowlisted builder and original source only; the original ten screenshots and all videos were not regenerated. The stored-value view uses a non-energy row-count operation to inspect the exact source cell, and does not verify physical zero consumption. D1 and E3 use unchanged stored actual outputs; E3's erroneous extra Weekday filter receives no human acceptance in the capture. E4's preserved invalid date is also checked for policy rejection. No generated replacement or synthetic output is presented as a model result. The result `3968.64` and all row counts are credited only to deterministic CPU computation. The native chart uses approximate geometry and unconverted source labels. Source/dictionary/policy faults affect only owned test copies; originals remain identical.
 
 All media under `docs/` and `docs/intent-v1/` outside `docs/ui-refit/` below are **historical** captures/diagrams. The two existing CPU/native stored-intent videos are historical, unchanged, and do not show this refit. No new video was recorded. Their receipt/acknowledgment captions do not establish target import or operational authority. No Library upload was attempted during this update; the previously documented desktop transfer blocker remains.
 

@@ -1,6 +1,7 @@
 {
   "base_commit": "29ccb12c1a205512f4dd468c7aed9714e5150cda",
   "captured_ui_source_reference_commit": "1edbc90393c0a4b2d323e3421920deefcaaa851f",
+  "additional_views_ui_source_reference_commit": "3f5a28c931586b24151dd8dfcae8ab0af001ddc2",
   "runtime_sources": [
     "ui-v2/index.html",
     "ui-v2/style.css",
@@ -13,10 +14,14 @@
   "backend_method_identity": "Additional immutable parser/policy/intent-store modules are bound by experiments/query-intent-v1/freeze.json; their digests remain unchanged.",
   "model_calls_added": 0,
   "frozen_total_model_calls": 12,
-  "new_native_screenshots": 10,
+  "new_native_screenshots": 12,
+  "additional_native_screenshots": 2,
+  "prior_ten_screenshots_regenerated": false,
   "new_video": false,
   "existing_videos": "Historical presentations; no UI v2 footage, no target import or operational-action proof",
-  "native_chrome_checks": 16,
+  "native_chrome_checks": 18,
+  "initial_native_chrome_checks": 16,
+  "additional_native_chrome_checks": 2,
   "chrome_execution": "Local installed Chrome; separate from GitHub CPU CI",
   "library_upload": "No new upload attempted; no new Library IDs",
   "files": [
@@ -91,6 +96,20 @@
       "provenance": "Versioned UI source or actual native Chrome engineering capture; no fabricated or newly generated model outputs"
     },
     {
+      "path": "docs/ui-refit/11-covered-empty-selection.png",
+      "bytes": 152575,
+      "sha256": "e6b15b527a9ac0ce44bdbc4d8d75a98e33e9621218371e7f06f57534f0609041",
+      "state": "current UI v2",
+      "provenance": "Versioned UI source or actual native Chrome engineering capture; no fabricated or newly generated model outputs"
+    },
+    {
+      "path": "docs/ui-refit/12-stored-source-value-zero.png",
+      "bytes": 214918,
+      "sha256": "df105823a24f7a22675f9c9c6c68cbdbd9e3f0232c6a17e9fc32eac805d56a42",
+      "state": "current UI v2",
+      "provenance": "Versioned UI source or actual native Chrome engineering capture; no fabricated or newly generated model outputs"
+    },
+    {
       "path": "ui-v2/index.html",
       "bytes": 8003,
       "sha256": "b7f48ce9a7bd2815cc37f2cd65f6727c564d2c9b29d3543282dfd2708e9fd9a9",
@@ -141,8 +160,8 @@
     },
     {
       "path": "scripts/ui-refit-media-manifest.py",
-      "bytes": 2558,
-      "sha256": "53392ed20582cdac5f22d01a644dd2c1ed55bd8a20e41b776a06598c5fef963b",
+      "bytes": 3012,
+      "sha256": "3dd2016dfa370a3487fecc16c36f3270dc1f18fb49c4bf30d78c80fb52fd6994",
       "state": "current UI v2",
       "provenance": "Versioned UI source or actual native Chrome engineering capture; no fabricated or newly generated model outputs"
     },
@@ -150,6 +169,13 @@
       "path": "scripts/browser-ui-refit.py",
       "bytes": 16655,
       "sha256": "c7433475ef3117be8321efcb368b9023540c4bae894b8e4e0b700159b89a0a38",
+      "state": "current UI v2",
+      "provenance": "Versioned UI source or actual native Chrome engineering capture; no fabricated or newly generated model outputs"
+    },
+    {
+      "path": "scripts/capture-ui-refit-extra.py",
+      "bytes": 6818,
+      "sha256": "2428dde6dea0c5588072bfa3046b0166726d792791f7bd91815c575c1d37016f",
       "state": "current UI v2",
       "provenance": "Versioned UI source or actual native Chrome engineering capture; no fabricated or newly generated model outputs"
     },
@@ -171,6 +197,13 @@
       "path": "evidence/ui-refit/browser-checks.json",
       "bytes": 6904,
       "sha256": "4bba1c7448a422128dfd31e845dfd375846ba64f80ec759101f11388f24cb5af",
+      "state": "current UI v2",
+      "provenance": "Versioned UI source or actual native Chrome engineering capture; no fabricated or newly generated model outputs"
+    },
+    {
+      "path": "evidence/ui-refit/additional-views.json",
+      "bytes": 3347,
+      "sha256": "d12de6605d334f09af5de2f67f7c2b2badd240d8360e84a0acdaa35036f3e5af",
       "state": "current UI v2",
       "provenance": "Versioned UI source or actual native Chrome engineering capture; no fabricated or newly generated model outputs"
     },
