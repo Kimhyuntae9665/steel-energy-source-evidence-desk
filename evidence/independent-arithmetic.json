@@ -1,0 +1,56 @@
+{
+  "kind": "Independent standard-library Decimal/integer-hundredths computation; not publisher labels or model grading",
+  "csv_sha256": "9b1cee6f9cb9cd9df2b95814ca90a9a2ff15b7f5f1fba0fae3c643e82072eacc",
+  "model_calls": 0,
+  "all": {
+    "rows": 35040,
+    "source_label_dates": 365,
+    "exact_usage_kwh": "959636.71",
+    "integer_hundredths": 95963671
+  },
+  "January": {
+    "rows": 2976,
+    "source_label_dates": 31,
+    "exact_usage_kwh": "126238.29",
+    "integer_hundredths": 12623829
+  },
+  "Jan15": {
+    "rows": 96,
+    "source_label_dates": 1,
+    "exact_usage_kwh": "3968.64",
+    "integer_hundredths": 396864
+  },
+  "Jan1": {
+    "rows": 96,
+    "source_label_dates": 1,
+    "exact_usage_kwh": "351.86",
+    "integer_hundredths": 35186
+  },
+  "Weekday": {
+    "rows": 25056,
+    "source_label_dates": 261,
+    "exact_usage_kwh": "842501.16",
+    "integer_hundredths": 84250116
+  },
+  "Weekend": {
+    "rows": 9984,
+    "source_label_dates": 104,
+    "exact_usage_kwh": "117135.55",
+    "integer_hundredths": 11713555
+  },
+  "load_counts": {
+    "Light_Load": 18072,
+    "Medium_Load": 9696,
+    "Maximum_Load": 7272
+  },
+  "raw_label_order_reversals": 365,
+  "all_days_96_rows": true,
+  "stored_source_zeros": [
+    {
+      "data_row": 29856,
+      "file_line": 29857,
+      "raw_label": "07/11/2018 00:00",
+      "Usage_kWh": "0"
+    }
+  ]
+}

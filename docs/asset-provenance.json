@@ -1,0 +1,20 @@
+{
+  "glyphs": "Original MIT generic geometric component artwork; no brand logos",
+  "reference": "User-approved synthetic-logo-rendering-compatibility-test.png v1; style only, no pixels copied",
+  "topology": "CSV -> Audit; CSV -> Query; Query -> Chart; Query -> Receipt",
+  "resources_embedded": true,
+  "glyph_viewbox": "48x48; fitted72x72 preserves aspect ratio",
+  "caption": "Implemented CPU prototype only; no LLM, live system, private vendor architecture or control path",
+  "files": [
+    {
+      "path": "docs/architecture.svg",
+      "sha256": "6b119c52040faa551ac580254f3b71b49d55092c77dd0434c1075862f632379a",
+      "bytes": 3469
+    },
+    {
+      "path": "docs/architecture.png",
+      "sha256": "37ea8e6c3132812365e0ea74a70f168cadaaf2c73e227540e6c1524e0a8a825a",
+      "bytes": 37850
+    }
+  ]
+}

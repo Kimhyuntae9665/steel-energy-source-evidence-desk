@@ -1,0 +1,73 @@
+{
+  "kind": "Actual CPU native browser captures and original architecture artwork",
+  "model_calls": 0,
+  "no_live_data": true,
+  "source_csv_sha256": "9b1cee6f9cb9cd9df2b95814ca90a9a2ff15b7f5f1fba0fae3c643e82072eacc",
+  "video_capture": "Native browser frames sampled at5fps; system CPU FFmpeg; no simulated model output",
+  "video": {
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1440,
+        "height": 1000
+      }
+    ],
+    "format": {
+      "duration": "11.000000",
+      "size": "559196"
+    }
+  },
+  "files": [
+    {
+      "path": "docs/admission-desktop.png",
+      "bytes": 176477,
+      "sha256": "b2590da8c90b3678af1f06ec3a58a6bda7ecb7ca5527b07343b50d8acda6e4c6"
+    },
+    {
+      "path": "docs/architecture.png",
+      "bytes": 37850,
+      "sha256": "37ea8e6c3132812365e0ea74a70f168cadaaf2c73e227540e6c1524e0a8a825a"
+    },
+    {
+      "path": "docs/architecture.svg",
+      "bytes": 3469,
+      "sha256": "6b119c52040faa551ac580254f3b71b49d55092c77dd0434c1075862f632379a"
+    },
+    {
+      "path": "docs/cpu-demo.mp4",
+      "bytes": 559196,
+      "sha256": "097835471c7de48926e16d2af5fb3cc50ae76d7a735535039b09984f23bc6399"
+    },
+    {
+      "path": "docs/energy-desktop.png",
+      "bytes": 111398,
+      "sha256": "297065370aef5e987cc18039aaf273407910a7a7cfe8531b305ac53a3696067b"
+    },
+    {
+      "path": "docs/energy-mobile-390.png",
+      "bytes": 447910,
+      "sha256": "d294179fa8830955e6d2301d8d8b6e12f5b4ee7ebc96984daa1d6883c09501c4"
+    },
+    {
+      "path": "docs/partial-coverage-desktop.png",
+      "bytes": 140708,
+      "sha256": "34e6fc01cfc7cf3f5c22c48e5dbd7a136def64911898e9b0cc190c9769cc0f12"
+    },
+    {
+      "path": "docs/stale-query-desktop.png",
+      "bytes": 106655,
+      "sha256": "f4218c02497ba735292a8560064dab780e1d972303c4ce6a171b6347d2483a8d"
+    },
+    {
+      "path": "docs/stored-source-zero-desktop.png",
+      "bytes": 154000,
+      "sha256": "2b016b9d6cb6a56d70ec22712d09debf1c39c552c76e53a63b71e1f39e4c84da"
+    },
+    {
+      "path": "docs/unresolved-desktop.png",
+      "bytes": 159512,
+      "sha256": "78c26c7b052c87bc13f008742eabadc2c69ffe522bd044538a93a9496055b00e"
+    }
+  ]
+}

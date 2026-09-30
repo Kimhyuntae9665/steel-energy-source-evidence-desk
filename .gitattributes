@@ -1,0 +1,5 @@
+* text=auto eol=lf
+data/*.csv -text
+data/*.zip -text
+*.png -text
+*.mp4 -text

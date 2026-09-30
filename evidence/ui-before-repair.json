@@ -1,0 +1,11 @@
+{
+  "kind": "Actual CPU Chrome/server pre-repair engineering reproduction",
+  "model_calls": 0,
+  "source_access": "Official admitted UCI851 only",
+  "selected_rows": 35040,
+  "empty_message": "EMPTY: no source rows match the confirmed filter. An empty query is distinct from missing measurements.",
+  "receipt_enabled_without_current_confirmation": true,
+  "history": "Most recent executed query\n\n{\"schema_version\":\"P12-UCI851-QUERY-1\",\"operation\":\"count_source_rows\",\"source_labeled_date_from\":null,\"source_labeled_date_to_exclusive\":null,\"source_weekstatus\":null,\"source_load_type\":null,\"unavailable_topic\":null} \u00b7 35040 rows \u00b7 incomplete kWh\n\nSource 9b1cee6f9cb9cd9df2b95814ca90a9a2ff15b7f5f1fba0fae3c643e82072eacc \u00b7 query e7e8d6e9a3843e55850901513cc36bc42b59485a58049d29e2f284e0f99e2c81",
+  "receipt_binding": "{\n  \"source_csv_sha256\": \"9b1cee6f9cb9cd9df2b95814ca90a9a2ff15b7f5f1fba0fae3c643e82072eacc\",\n  \"filter\": {\n    \"schema_version\": \"P12-UCI851-QUERY-1\",\n    \"operation\": \"count_source_rows\",\n    \"source_labeled_date_from\": null,\n    \"source_labeled_date_to_exclusive\": null,\n    \"source_weekstatus\": null,\n    \"source_load_type\": null,\n    \"unavailable_topic\": null\n  },\n  \"filter_hash\": \"dc1d2c97a5cc0a37448d6ece30da0cf51e8ce9a0e01437c3be8ba391002d32a3\",\n  \"query_fingerprint\": \"e7e8d6e9a3843e55850901513cc36bc42b59485a58049d29e2f284e0f99e2c81\",\n  \"excluded_invalid_date_rows\": [],\n  \"arithmetic\": \"exact decimal integers\"\n}",
+  "exported_receipt_fingerprint_matches": false
+}

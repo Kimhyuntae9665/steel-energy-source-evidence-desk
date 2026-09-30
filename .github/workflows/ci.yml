@@ -1,0 +1,17 @@
+name: CPU source contract
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  source-and-contract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm test
+      - run: node scripts/build-evidence.mjs
+      - run: python3 scripts/independent-arithmetic.py
+      - name: Derived source checks match committed receipts
+        run: git diff --exit-code -- evidence/cpu-conformance.json evidence/independent-arithmetic.json evidence/jan15-receipt.json

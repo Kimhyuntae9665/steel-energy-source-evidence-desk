@@ -1,0 +1,15 @@
+{
+  "archive_url": "https://archive.ics.uci.edu/static/public/851/steel+industry+energy+consumption.zip",
+  "archive_bytes": 481973,
+  "archive_sha256": "d82d28b33780ff1582507fcf08ae764ff648af459d58234370c551e62aadeaef",
+  "csv_member": "Steel_industry_data.csv",
+  "csv_bytes": 2731389,
+  "csv_sha256": "9b1cee6f9cb9cd9df2b95814ca90a9a2ff15b7f5f1fba0fae3c643e82072eacc",
+  "original_modified": false,
+  "dataset_page": "https://archive.ics.uci.edu/dataset/851/steel+industry+energy+consumption",
+  "doi": "10.24432/C52G8C",
+  "attribution": "V E, S., Shin, C., & Cho, Y. (2021). Steel Industry Energy Consumption. UCI Machine Learning Repository.",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "historical_source_year": 2018
+}

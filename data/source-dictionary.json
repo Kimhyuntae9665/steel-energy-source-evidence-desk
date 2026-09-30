@@ -1,0 +1,20 @@
+{
+  "dictionary_version": "P12-UCI851-DICTIONARY-1",
+  "source": "https://archive.ics.uci.edu/dataset/851/steel+industry+energy+consumption",
+  "doi": "10.24432/C52G8C",
+  "attribution": "V E, S., Shin, C., & Cho, Y. (2021). Steel Industry Energy Consumption. UCI Machine Learning Repository.",
+  "license": "CC BY 4.0",
+  "original_csv_modified": false,
+  "scope": "This is a cited projection of publisher metadata plus explicitly marked prototype interpretation limits; it is not a new source file.",
+  "fields": {
+    "date": {"source_type": "Date", "prototype_parse": "DD/MM/YYYY HH:mm", "timezone": "unspecified", "physical_interval_boundary": "unresolved"},
+    "Usage_kWh": {"source_description": "Industry Energy Consumption", "publisher_unit": "kWh", "prototype_sum": "exact original decimal lexemes, two-decimal output"},
+    "CO2(tCO2)": {"publisher_column_name": "CO2(tCO2)", "publisher_unit": "ppm", "mass_total": "unresolved_source_name_unit_inconsistency"},
+    "NSM": {"publisher_unit": "s", "publisher_description": "Number of Seconds from midnight", "prototype_check": "compare to recorded clock label without assigning an interval or timezone"},
+    "WeekStatus": {"source_categories": ["Weekday", "Weekend"], "raw_csv_type": "text labels", "publisher_description": "Weekend (0) or a Weekday(1)", "prototype_comparison": "calendar weekday of source label only; raw text is not silently encoded to 0/1"},
+    "Day_of_week": {"source_categories": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]},
+    "Load_Type": {"source_categories": ["Light_Load", "Medium_Load", "Maximum_Load"], "causal_meaning": "No equipment fault or production rate is established"}
+  },
+  "absent_evidence": ["production tonnes", "tariff", "equipment fault labels", "timezone", "physical interval boundary", "live 2026 readings"],
+  "source_label_convention": "Keep original labels and file order; 00:00 after 23:45 is not repaired into another day."
+}

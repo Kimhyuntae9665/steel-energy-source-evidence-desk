@@ -1,0 +1,19 @@
+{
+  "schema_version": "P12-UCI851-QUERY-1",
+  "required_fields": ["schema_version", "operation", "source_labeled_date_from", "source_labeled_date_to_exclusive", "source_weekstatus", "source_load_type", "unavailable_topic"],
+  "additional_fields": false,
+  "operations": ["count_source_rows", "sum_source_usage_kwh", "count_by_source_load_type", "compare_source_weekstatus_sums", "describe_source_time_order", "report_missing_or_unresolved_field"],
+  "date_bounds": {"format": "YYYY-MM-DD", "calendar": "strict_Gregorian", "pair": "both_or_neither", "order": "from_less_than_exclusive_to", "semantics": "source_labeled_calendar_dates", "null_scope": ["2018-01-01", "2019-01-01"]},
+  "source_weekstatus": ["Weekday", "Weekend"],
+  "source_load_type": ["Light_Load", "Medium_Load", "Maximum_Load"],
+  "unavailable_topics": ["period_coverage", "co2_mass", "energy_per_tonne", "electricity_cost", "equipment_fault_cause", "source_timezone", "physical_interval_boundary"],
+  "topic_states": {"period_coverage": "period_present_in_historical_source", "co2_mass": "unit_and_derivation_unresolved", "energy_per_tonne": "production_quantity_absent", "electricity_cost": "tariff_and_billing_rules_absent", "equipment_fault_cause": "equipment_and_fault_cause_labels_absent", "source_timezone": "source_timezone_unresolved", "physical_interval_boundary": "physical_interval_semantics_unresolved"},
+  "validation_precedence": ["shape_and_enum", "calendar", "range", "coverage", "selection", "operation"],
+  "coverage": {"from": "2018-01-01", "to_exclusive": "2019-01-01", "outside_state": "period_not_in_historical_source", "partial_state": "scope_not_fully_covered"},
+  "selection": {"filters": "AND", "empty_state": "empty_selection", "empty_group_state": "empty_group", "groups": "all_declared_categories_even_when_filtered_out", "invalid_dates": "explicitly_excluded_and_receipted"},
+  "operation_constraints": {"describe_source_time_order": "all_date_and_category_filters_null_full_original_row_order", "report_missing_or_unresolved_field": "unavailable_topic_required", "all_other_operations": "unavailable_topic_null"},
+  "answers": {"usage_arithmetic": "exact_decimal_BigInt", "usage_format": "exact_two_decimal_places_no_rounding", "measured_zero": "0.00", "empty_usage": null, "unavailable_count_and_value": null, "ranking": "unsupported", "daily_series": "contextual_source_usage_for_energy_operations_only", "non_energy_operations": "select_source_rows_without_energy_aggregation"},
+  "source_time_policy": "Keep DD/MM/YYYY labels and raw source row order; 00:00 remains after 23:45. No timezone or physical interval boundary inference.",
+  "receipt": {"digests": ["source_csv_sha256", "source_dictionary_sha256", "query_policy_sha256"], "binds": ["canonical_query", "selected_row_ids", "contributing_row_ids", "counts", "exact_two_decimal_usage", "source_label_basis", "unresolved_states"], "query_fingerprint": "SHA256 of canonical JSON receipt before adding query_fingerprint"},
+  "evaluation_scope": "Declared conformance cases are visible policy checks, not an unseen benchmark. No model or GPU claims."
+}

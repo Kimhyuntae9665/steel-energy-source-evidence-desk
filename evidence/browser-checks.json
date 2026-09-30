@@ -1,0 +1,94 @@
+{
+  "kind": "Executed CPU-only native Chrome engineering regressions",
+  "model_calls": 0,
+  "checks_passed": 16,
+  "checks": [
+    {
+      "check": "Actual Jan15 exact sum and preserved source ledger midnight position",
+      "status": "passed",
+      "details": null
+    },
+    {
+      "check": "Confirmation withdrawal disables export; downloaded immutable receipt matches fingerprint and exact row scope",
+      "status": "passed",
+      "details": null
+    },
+    {
+      "check": "Repeated canonical query has stable fingerprint, distinct local history entries",
+      "status": "passed",
+      "details": null
+    },
+    {
+      "check": "Native Enter opens exact source evidence at named focusable destination",
+      "status": "passed",
+      "details": null
+    },
+    {
+      "check": "Tab/Enter execution retains explicit control focus",
+      "status": "passed",
+      "details": null
+    },
+    {
+      "check": "Non-energy selected rows do not display empty energy chart or invent kWh history; policy digest named correctly",
+      "status": "passed",
+      "details": null
+    },
+    {
+      "check": "Carbon unit/derivation remains explicitly unresolved with no numeric answer",
+      "status": "passed",
+      "details": null
+    },
+    {
+      "check": "Actual browser calendar/range/wholly outside/partial coverage stay distinct nonnumeric states",
+      "status": "passed",
+      "details": null
+    },
+    {
+      "check": "Covered empty AND selection is empty, not measured zero or missing",
+      "status": "passed",
+      "details": null
+    },
+    {
+      "check": "Stored source zero retains original raw label, row ID and valid numeric evidence; no physical-zero claim",
+      "status": "passed",
+      "details": null
+    },
+    {
+      "check": "Delayed executed response remains historical after input change and preserves later explicit focus",
+      "status": "passed",
+      "details": null
+    },
+    {
+      "check": "Late ledger response cannot overwrite a newer explicit date selection",
+      "status": "passed",
+      "details": null
+    },
+    {
+      "check": "Chart raw source-label tooltip is identical across browser timezones",
+      "status": "passed",
+      "details": "Raw source date label 15/01/2018: 3968.64 kWh \u00b7 96 rows"
+    },
+    {
+      "check": "390px layout has no page overflow, native Gantt-free chart scroll, meaningful text>=14px",
+      "status": "passed",
+      "details": {
+        "page": 390,
+        "viewport": 390,
+        "chart": 1200,
+        "minText": 14
+      }
+    },
+    {
+      "check": "Actual Chrome runtime has no unhandled page exceptions",
+      "status": "passed",
+      "details": null
+    },
+    {
+      "check": "Source-byte change denies old receipt and clears confirmation, original file unchanged",
+      "status": "passed",
+      "details": null
+    }
+  ],
+  "source_csv_sha256": "9b1cee6f9cb9cd9df2b95814ca90a9a2ff15b7f5f1fba0fae3c643e82072eacc",
+  "capture_note": "Actual app and public UCI source. Chart geometry approximate, authoritative decimals from CPU. No inference or live system."
+}
