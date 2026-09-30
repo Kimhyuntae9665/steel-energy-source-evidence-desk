@@ -11,6 +11,10 @@ jobs:
         with:
           node-version: '20'
       - run: npm test
+      - name: Frozen optional method and CPU transport fault mocks (no inference)
+        run: |
+          python3 scripts/test-intent-protocol.py
+          python3 scripts/test-intent-transport.py
       - run: node scripts/build-evidence.mjs
       - run: python3 scripts/independent-arithmetic.py
       - name: Derived source checks match committed receipts

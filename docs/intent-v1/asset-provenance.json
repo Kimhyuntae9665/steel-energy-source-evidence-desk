@@ -1,0 +1,19 @@
+{
+  "glyphs": "Original MIT geometric component glyphs, not technology logos",
+  "topology": "Stored typed Intent -> human Review -> visible Query builder; execution requires separate confirmation",
+  "style_reference": "User-approved original logo-card style; no reference pixels copied",
+  "resource_embedding": "Native inline SVG paths only",
+  "fit": "Each48x48viewBox fitted72x72, aspect ratio1 preserved",
+  "files": [
+    {
+      "path": "docs/intent-v1/optional-branch.svg",
+      "bytes": 2331,
+      "sha256": "c81b5f56a09fe2d18e614338b1c88289203fc0448741fecc19bf1be742224be6"
+    },
+    {
+      "path": "docs/intent-v1/optional-branch.png",
+      "bytes": 19543,
+      "sha256": "44494e7661d82004ddcde861345ae2ab15345fcfec1dc567409625a186eb6324"
+    }
+  ]
+}

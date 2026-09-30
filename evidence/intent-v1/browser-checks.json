@@ -1,0 +1,445 @@
+{
+  "kind": "Executed CPU-only native Chrome intent/authority regressions",
+  "model_calls": 0,
+  "live_inference": false,
+  "fixture_note": "Read-only original inputs copied to isolated owned admission fixtures. Explicit CPU-mock checks inject SYNTHETIC CPU TRANSPORT FIXTURE attempts in memory; no model-runs fixture files. Offline authority checks force absent attempts. No generated model result or baseline media rerun.",
+  "checks_passed": 28,
+  "checks_failed": 0,
+  "checks": [
+    {
+      "check": "CPU mock: explicit semantic review only stages builder; separate source confirmation executes and exact export binds repeated review",
+      "status": "passed",
+      "details": {
+        "fixture_provenance": "SYNTHETIC CPU TRANSPORT FIXTURE",
+        "review_only_execution_requests": 0,
+        "repeated_review": "idempotent",
+        "separate_source_confirmation": true,
+        "cpu_exact_usage_kwh": "959636.71",
+        "export_receipt_fingerprint": "873333e05464e2930b4a207be265d1c77acf80a35a76c8fa769dd06bb7dbc3ef",
+        "export_review_binding_exact": true,
+        "model_result": false
+      },
+      "elapsed_seconds": 1.502
+    },
+    {
+      "check": "CPU mock: delayed review cannot stage after manual_edit and preserves later focus",
+      "status": "passed",
+      "details": {
+        "intervening_action": "manual_edit",
+        "delayed_review_staged": false,
+        "execution_started": false,
+        "later_focus_preserved": true,
+        "model_result": false
+      },
+      "elapsed_seconds": 0.394
+    },
+    {
+      "check": "CPU mock: delayed review cannot stage after question_selection and preserves later focus",
+      "status": "passed",
+      "details": {
+        "intervening_action": "question_selection",
+        "delayed_review_staged": false,
+        "execution_started": false,
+        "later_focus_preserved": true,
+        "model_result": false
+      },
+      "elapsed_seconds": 0.335
+    },
+    {
+      "check": "CPU mock: in-memory proposal replacement cannot inherit acceptance and requires fresh inspection",
+      "status": "passed",
+      "details": {
+        "old_inspection": "stale",
+        "new_fingerprint_changed": true,
+        "fresh_semantic_confirmation_required": true,
+        "acceptance_transferred": false,
+        "replacement_source_weekstatus": "Weekend",
+        "model_result": false
+      },
+      "elapsed_seconds": 0.422
+    },
+    {
+      "check": "CPU mock: E4 invalid Gregorian label is preserved with field-specific rejection and no review authority",
+      "status": "passed",
+      "details": {
+        "case": "E4",
+        "raw_invalid_date_preserved": "2018-02-29",
+        "policy_state": "invalid_calendar_date",
+        "field": "source_labeled_date_from",
+        "review_allowed": false,
+        "model_result": false
+      },
+      "elapsed_seconds": 0.263
+    },
+    {
+      "check": "CPU mock: 390px unproven proposal and explicit synthetic provenance remain readable without page overflow",
+      "status": "passed",
+      "details": {
+        "page": 390,
+        "viewport": 390,
+        "min_text": 14,
+        "fixture_provenance_visible": true,
+        "model_result": false
+      },
+      "elapsed_seconds": 0.454
+    },
+    {
+      "check": "Preselection nullable counts: invalid_calendar_date",
+      "status": "passed",
+      "details": {
+        "state": "invalid_calendar_date",
+        "contributing_rows_display": "Not evaluated",
+        "matching_date_display": "Not evaluated",
+        "answer_count": null
+      },
+      "elapsed_seconds": 0.308
+    },
+    {
+      "check": "Preselection nullable counts: invalid_date_range",
+      "status": "passed",
+      "details": {
+        "state": "invalid_date_range",
+        "contributing_rows_display": "Not evaluated",
+        "matching_date_display": "Not evaluated",
+        "answer_count": null
+      },
+      "elapsed_seconds": 0.236
+    },
+    {
+      "check": "Preselection nullable counts: period_not_in_historical_source",
+      "status": "passed",
+      "details": {
+        "state": "period_not_in_historical_source",
+        "contributing_rows_display": "Not evaluated",
+        "matching_date_display": "Not evaluated",
+        "answer_count": null
+      },
+      "elapsed_seconds": 0.23
+    },
+    {
+      "check": "Preselection nullable counts: scope_not_fully_covered",
+      "status": "passed",
+      "details": {
+        "state": "scope_not_fully_covered",
+        "contributing_rows_display": "Not evaluated",
+        "matching_date_display": "Not evaluated",
+        "answer_count": null
+      },
+      "elapsed_seconds": 0.251
+    },
+    {
+      "check": "Covered empty AND selection shows zero counts and null energy",
+      "status": "passed",
+      "details": {
+        "state": "empty_selection",
+        "count_displays": [
+          "0",
+          "0",
+          "0"
+        ],
+        "exact_energy": null
+      },
+      "elapsed_seconds": 0.353
+    },
+    {
+      "check": "Offline not_run inspection performs no generation or execution and preserves keyboard focus",
+      "status": "passed",
+      "details": {
+        "stored_attempt": "injected_absent_not_a_model_fixture",
+        "intent_state": "NOT RUN \u00b7 no stored proposal exists. Inspecting does not call the model.",
+        "request_paths": [
+          "/api/intent-proposal?id=D1"
+        ],
+        "keyboard_focus": "intent-inspect"
+      },
+      "elapsed_seconds": 0.161
+    },
+    {
+      "check": "Owned source missing failure on receipt revokes authority and preserves exact historical evidence",
+      "status": "passed",
+      "details": {
+        "owned_file": "source",
+        "fault": "missing",
+        "failing_endpoint": "receipt",
+        "historical_exact_usage_kwh": "3968.64",
+        "old_evidence_sha256": "d9b2743cd1e1f27eeacb17263ed2d3282b14c530e41bb4557bd4e79cb61f4353",
+        "authority": "revoked",
+        "confirmation": false
+      },
+      "elapsed_seconds": 0.501
+    },
+    {
+      "check": "Owned source missing failure on rows revokes authority and preserves exact historical evidence",
+      "status": "passed",
+      "details": {
+        "owned_file": "source",
+        "fault": "missing",
+        "failing_endpoint": "rows",
+        "historical_exact_usage_kwh": "3968.64",
+        "old_evidence_sha256": "d9b2743cd1e1f27eeacb17263ed2d3282b14c530e41bb4557bd4e79cb61f4353",
+        "authority": "revoked",
+        "confirmation": false
+      },
+      "elapsed_seconds": 0.35
+    },
+    {
+      "check": "Owned source unreadable failure on receipt revokes authority and preserves exact historical evidence",
+      "status": "passed",
+      "details": {
+        "owned_file": "source",
+        "fault": "unreadable",
+        "failing_endpoint": "receipt",
+        "historical_exact_usage_kwh": "3968.64",
+        "old_evidence_sha256": "d9b2743cd1e1f27eeacb17263ed2d3282b14c530e41bb4557bd4e79cb61f4353",
+        "authority": "revoked",
+        "confirmation": false
+      },
+      "elapsed_seconds": 0.37
+    },
+    {
+      "check": "Owned source unreadable failure on rows revokes authority and preserves exact historical evidence",
+      "status": "passed",
+      "details": {
+        "owned_file": "source",
+        "fault": "unreadable",
+        "failing_endpoint": "rows",
+        "historical_exact_usage_kwh": "3968.64",
+        "old_evidence_sha256": "d9b2743cd1e1f27eeacb17263ed2d3282b14c530e41bb4557bd4e79cb61f4353",
+        "authority": "revoked",
+        "confirmation": false
+      },
+      "elapsed_seconds": 0.351
+    },
+    {
+      "check": "Owned dictionary missing failure on receipt revokes authority and preserves exact historical evidence",
+      "status": "passed",
+      "details": {
+        "owned_file": "dictionary",
+        "fault": "missing",
+        "failing_endpoint": "receipt",
+        "historical_exact_usage_kwh": "3968.64",
+        "old_evidence_sha256": "d9b2743cd1e1f27eeacb17263ed2d3282b14c530e41bb4557bd4e79cb61f4353",
+        "authority": "revoked",
+        "confirmation": false
+      },
+      "elapsed_seconds": 0.338
+    },
+    {
+      "check": "Owned dictionary missing failure on rows revokes authority and preserves exact historical evidence",
+      "status": "passed",
+      "details": {
+        "owned_file": "dictionary",
+        "fault": "missing",
+        "failing_endpoint": "rows",
+        "historical_exact_usage_kwh": "3968.64",
+        "old_evidence_sha256": "d9b2743cd1e1f27eeacb17263ed2d3282b14c530e41bb4557bd4e79cb61f4353",
+        "authority": "revoked",
+        "confirmation": false
+      },
+      "elapsed_seconds": 0.304
+    },
+    {
+      "check": "Owned dictionary unreadable failure on receipt revokes authority and preserves exact historical evidence",
+      "status": "passed",
+      "details": {
+        "owned_file": "dictionary",
+        "fault": "unreadable",
+        "failing_endpoint": "receipt",
+        "historical_exact_usage_kwh": "3968.64",
+        "old_evidence_sha256": "d9b2743cd1e1f27eeacb17263ed2d3282b14c530e41bb4557bd4e79cb61f4353",
+        "authority": "revoked",
+        "confirmation": false
+      },
+      "elapsed_seconds": 0.33
+    },
+    {
+      "check": "Owned dictionary unreadable failure on rows revokes authority and preserves exact historical evidence",
+      "status": "passed",
+      "details": {
+        "owned_file": "dictionary",
+        "fault": "unreadable",
+        "failing_endpoint": "rows",
+        "historical_exact_usage_kwh": "3968.64",
+        "old_evidence_sha256": "d9b2743cd1e1f27eeacb17263ed2d3282b14c530e41bb4557bd4e79cb61f4353",
+        "authority": "revoked",
+        "confirmation": false
+      },
+      "elapsed_seconds": 0.301
+    },
+    {
+      "check": "Owned policy missing failure on receipt revokes authority and preserves exact historical evidence",
+      "status": "passed",
+      "details": {
+        "owned_file": "policy",
+        "fault": "missing",
+        "failing_endpoint": "receipt",
+        "historical_exact_usage_kwh": "3968.64",
+        "old_evidence_sha256": "d9b2743cd1e1f27eeacb17263ed2d3282b14c530e41bb4557bd4e79cb61f4353",
+        "authority": "revoked",
+        "confirmation": false
+      },
+      "elapsed_seconds": 0.329
+    },
+    {
+      "check": "Owned policy missing failure on rows revokes authority and preserves exact historical evidence",
+      "status": "passed",
+      "details": {
+        "owned_file": "policy",
+        "fault": "missing",
+        "failing_endpoint": "rows",
+        "historical_exact_usage_kwh": "3968.64",
+        "old_evidence_sha256": "d9b2743cd1e1f27eeacb17263ed2d3282b14c530e41bb4557bd4e79cb61f4353",
+        "authority": "revoked",
+        "confirmation": false
+      },
+      "elapsed_seconds": 0.304
+    },
+    {
+      "check": "Owned policy unreadable failure on receipt revokes authority and preserves exact historical evidence",
+      "status": "passed",
+      "details": {
+        "owned_file": "policy",
+        "fault": "unreadable",
+        "failing_endpoint": "receipt",
+        "historical_exact_usage_kwh": "3968.64",
+        "old_evidence_sha256": "d9b2743cd1e1f27eeacb17263ed2d3282b14c530e41bb4557bd4e79cb61f4353",
+        "authority": "revoked",
+        "confirmation": false
+      },
+      "elapsed_seconds": 0.334
+    },
+    {
+      "check": "Owned policy unreadable failure on rows revokes authority and preserves exact historical evidence",
+      "status": "passed",
+      "details": {
+        "owned_file": "policy",
+        "fault": "unreadable",
+        "failing_endpoint": "rows",
+        "historical_exact_usage_kwh": "3968.64",
+        "old_evidence_sha256": "d9b2743cd1e1f27eeacb17263ed2d3282b14c530e41bb4557bd4e79cb61f4353",
+        "authority": "revoked",
+        "confirmation": false
+      },
+      "elapsed_seconds": 0.299
+    },
+    {
+      "check": "Held valid query response cannot replace cached exact evidence or restore revoked authority",
+      "status": "passed",
+      "details": {
+        "held_valid_query_kwh": "351.86",
+        "retained_historical_query_kwh": "3968.64",
+        "revocation_endpoint": "intent-proposal",
+        "later_focus": "end",
+        "old_response_restored_authority": false
+      },
+      "elapsed_seconds": 0.828
+    },
+    {
+      "check": "Held valid row response cannot overwrite historical ledger or restore revoked authority",
+      "status": "passed",
+      "details": {
+        "held_valid_row_date": "2018-01-16",
+        "retained_historical_row_date": "2018-01-15",
+        "revocation_endpoint": "receipt",
+        "late_ledger_overwrite": false
+      },
+      "elapsed_seconds": 0.722
+    },
+    {
+      "check": "390px offline-intent layout has no page overflow and readable text",
+      "status": "passed",
+      "details": {
+        "page": 390,
+        "viewport": 390,
+        "min_text": 14,
+        "overflow_elements": []
+      },
+      "elapsed_seconds": 0.377
+    },
+    {
+      "check": "CPU browser has no unhandled exceptions or generation/external requests",
+      "status": "passed",
+      "details": {
+        "unhandled_page_errors": [],
+        "generation_requests": 0,
+        "request_count": 221,
+        "network_scope": "owned localhost server only"
+      },
+      "elapsed_seconds": 0.0
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "docs/intent-v1/cpu-mock-transport/unproven-proposal-desktop.png",
+      "sha256": "ac2e8aa6498aefa56adf544d9e4046d9085d0c70a8699074320b749109abe766"
+    },
+    {
+      "path": "docs/intent-v1/cpu-mock-transport/human-reviewed-cpu-execution-desktop.png",
+      "sha256": "db5d665c393c8be80f02c36efd3a67960053ae036d7cbdcb6c534b8350c11d63"
+    },
+    {
+      "path": "docs/intent-v1/cpu-mock-transport/replacement-requires-fresh-review-desktop.png",
+      "sha256": "61ae3b24233d732e34a4e8e6a3b1898e36e61de599e4538b51785b7471f13cc2"
+    },
+    {
+      "path": "docs/intent-v1/cpu-mock-transport/invalid-calendar-field-desktop.png",
+      "sha256": "79b1ad444a2dfdde6ff6f19e584510b37e13682260942e7d88727f00aef99fd8"
+    },
+    {
+      "path": "docs/intent-v1/cpu-mock-transport/unproven-proposal-mobile-390.png",
+      "sha256": "b4a46aea47c394150dfdd3a4e6585e38cfe48991687a034e41b9e604c7c4c9cd"
+    },
+    {
+      "path": "docs/intent-v1/invalid_calendar_date-desktop.png",
+      "sha256": "e1bbf0a12722735c93c0cc1f0bc3502457c5c3437fb08c276fb40c5da45a5274"
+    },
+    {
+      "path": "docs/intent-v1/invalid_date_range-desktop.png",
+      "sha256": "83f73ffd674b5a05d4c541890c3875d7056da37807894198de3316df2dc14fbd"
+    },
+    {
+      "path": "docs/intent-v1/period_not_in_historical_source-desktop.png",
+      "sha256": "82e5386cad38655babb86991da56f08d98b054c8f074ad6472f746b8f53d20c0"
+    },
+    {
+      "path": "docs/intent-v1/scope_not_fully_covered-desktop.png",
+      "sha256": "42ae1e4159c385a0adc0418a09a02996cfd96fcbdbe0905caf2021e846cd3a61"
+    },
+    {
+      "path": "docs/intent-v1/covered-empty-desktop.png",
+      "sha256": "a4a57ddf32052360ff5e864e06f8c1bd20f3231394dc7bf4436bb6ef5ffa1a35"
+    },
+    {
+      "path": "docs/intent-v1/not-run-intent-desktop.png",
+      "sha256": "b0590d1a2e5531cf24cdcf962b38ce5bf341fe4202a34e29a827047bf5c1ce23"
+    },
+    {
+      "path": "docs/intent-v1/missing-source-historical-desktop.png",
+      "sha256": "a130ae7fb9ea5831d5dda9d26071a2b30ff9ed8c51bd690258d838252dde701f"
+    },
+    {
+      "path": "docs/intent-v1/late-query-after-revocation-desktop.png",
+      "sha256": "a130ae7fb9ea5831d5dda9d26071a2b30ff9ed8c51bd690258d838252dde701f"
+    },
+    {
+      "path": "docs/intent-v1/late-rows-after-revocation-desktop.png",
+      "sha256": "75fc4e5526b5c2adf252181268acbedae6c6f385fe92f194e1d9cc99ef802ff6"
+    },
+    {
+      "path": "docs/intent-v1/not-run-intent-mobile-390.png",
+      "sha256": "ba73e36e42b67c713851d8e0320fb3614b3169e87a5df3095b683417a22a1034"
+    }
+  ],
+  "original_digests": {
+    "source": "9b1cee6f9cb9cd9df2b95814ca90a9a2ff15b7f5f1fba0fae3c643e82072eacc",
+    "dictionary": "0addb58b376c8583e7d23b0ed8ce614e7f536f20b435efc378641b12d04def33",
+    "policy": "dc1d2c97a5cc0a37448d6ece30da0cf51e8ce9a0e01437c3be8ba391002d32a3"
+  },
+  "intent_protocol_freeze_sha256": "2b971409cf0867b5f00d08654cd296e2c64919e3e7e0d3517a61402dc57a40dc",
+  "original_inputs_unchanged": {
+    "source": true,
+    "dictionary": true,
+    "policy": true
+  },
+  "protected_baseline_media_touched": false
+}

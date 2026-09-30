@@ -1,0 +1,8 @@
+{
+  "split": "development",
+  "questions": [
+    {"id": "D1", "question": "What is the sum of the source Usage_kWh field over the entire historical file?"},
+    {"id": "D2", "question": "How many source rows belong to each Load_Type category over the entire file?"},
+    {"id": "D3", "question": "Describe the original source date/time label order across the whole file."}
+  ]
+}

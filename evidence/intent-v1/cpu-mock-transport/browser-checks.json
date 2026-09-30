@@ -1,0 +1,121 @@
+{
+  "kind": "Synthetic CPU mock transport UI checks; not a model result",
+  "model_calls": 0,
+  "live_inference": false,
+  "fixture_note": "Read-only original inputs copied to isolated owned admission fixtures. Explicit CPU-mock checks inject SYNTHETIC CPU TRANSPORT FIXTURE attempts in memory; no model-runs fixture files. Offline authority checks force absent attempts. No generated model result or baseline media rerun.",
+  "checks_passed": 6,
+  "checks_failed": 0,
+  "checks": [
+    {
+      "check": "CPU mock: explicit semantic review only stages builder; separate source confirmation executes and exact export binds repeated review",
+      "status": "passed",
+      "details": {
+        "fixture_provenance": "SYNTHETIC CPU TRANSPORT FIXTURE",
+        "review_only_execution_requests": 0,
+        "repeated_review": "idempotent",
+        "separate_source_confirmation": true,
+        "cpu_exact_usage_kwh": "959636.71",
+        "export_receipt_fingerprint": "873333e05464e2930b4a207be265d1c77acf80a35a76c8fa769dd06bb7dbc3ef",
+        "export_review_binding_exact": true,
+        "model_result": false
+      },
+      "elapsed_seconds": 1.502
+    },
+    {
+      "check": "CPU mock: delayed review cannot stage after manual_edit and preserves later focus",
+      "status": "passed",
+      "details": {
+        "intervening_action": "manual_edit",
+        "delayed_review_staged": false,
+        "execution_started": false,
+        "later_focus_preserved": true,
+        "model_result": false
+      },
+      "elapsed_seconds": 0.394
+    },
+    {
+      "check": "CPU mock: delayed review cannot stage after question_selection and preserves later focus",
+      "status": "passed",
+      "details": {
+        "intervening_action": "question_selection",
+        "delayed_review_staged": false,
+        "execution_started": false,
+        "later_focus_preserved": true,
+        "model_result": false
+      },
+      "elapsed_seconds": 0.335
+    },
+    {
+      "check": "CPU mock: in-memory proposal replacement cannot inherit acceptance and requires fresh inspection",
+      "status": "passed",
+      "details": {
+        "old_inspection": "stale",
+        "new_fingerprint_changed": true,
+        "fresh_semantic_confirmation_required": true,
+        "acceptance_transferred": false,
+        "replacement_source_weekstatus": "Weekend",
+        "model_result": false
+      },
+      "elapsed_seconds": 0.422
+    },
+    {
+      "check": "CPU mock: E4 invalid Gregorian label is preserved with field-specific rejection and no review authority",
+      "status": "passed",
+      "details": {
+        "case": "E4",
+        "raw_invalid_date_preserved": "2018-02-29",
+        "policy_state": "invalid_calendar_date",
+        "field": "source_labeled_date_from",
+        "review_allowed": false,
+        "model_result": false
+      },
+      "elapsed_seconds": 0.263
+    },
+    {
+      "check": "CPU mock: 390px unproven proposal and explicit synthetic provenance remain readable without page overflow",
+      "status": "passed",
+      "details": {
+        "page": 390,
+        "viewport": 390,
+        "min_text": 14,
+        "fixture_provenance_visible": true,
+        "model_result": false
+      },
+      "elapsed_seconds": 0.454
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "docs/intent-v1/cpu-mock-transport/unproven-proposal-desktop.png",
+      "sha256": "ac2e8aa6498aefa56adf544d9e4046d9085d0c70a8699074320b749109abe766"
+    },
+    {
+      "path": "docs/intent-v1/cpu-mock-transport/human-reviewed-cpu-execution-desktop.png",
+      "sha256": "db5d665c393c8be80f02c36efd3a67960053ae036d7cbdcb6c534b8350c11d63"
+    },
+    {
+      "path": "docs/intent-v1/cpu-mock-transport/replacement-requires-fresh-review-desktop.png",
+      "sha256": "61ae3b24233d732e34a4e8e6a3b1898e36e61de599e4538b51785b7471f13cc2"
+    },
+    {
+      "path": "docs/intent-v1/cpu-mock-transport/invalid-calendar-field-desktop.png",
+      "sha256": "79b1ad444a2dfdde6ff6f19e584510b37e13682260942e7d88727f00aef99fd8"
+    },
+    {
+      "path": "docs/intent-v1/cpu-mock-transport/unproven-proposal-mobile-390.png",
+      "sha256": "b4a46aea47c394150dfdd3a4e6585e38cfe48991687a034e41b9e604c7c4c9cd"
+    }
+  ],
+  "original_digests": {
+    "source": "9b1cee6f9cb9cd9df2b95814ca90a9a2ff15b7f5f1fba0fae3c643e82072eacc",
+    "dictionary": "0addb58b376c8583e7d23b0ed8ce614e7f536f20b435efc378641b12d04def33",
+    "policy": "dc1d2c97a5cc0a37448d6ece30da0cf51e8ce9a0e01437c3be8ba391002d32a3"
+  },
+  "intent_protocol_freeze_sha256": "2b971409cf0867b5f00d08654cd296e2c64919e3e7e0d3517a61402dc57a40dc",
+  "original_inputs_unchanged": {
+    "source": true,
+    "dictionary": true,
+    "policy": true
+  },
+  "protected_baseline_media_touched": false
+}

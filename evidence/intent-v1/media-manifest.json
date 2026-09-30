@@ -1,0 +1,114 @@
+{
+  "model_generation_calls": 0,
+  "files": [
+    {
+      "path": "docs/intent-v1/before-mobile-repair/before-mobile-repair.png",
+      "bytes": 358741,
+      "sha256": "f70972c3a4ea7ff4f38c2f809e7c526b75919f8d4fa42258b620a0be50aa0b58",
+      "provenance": "Preserved before-repair CPU screenshot"
+    },
+    {
+      "path": "docs/intent-v1/covered-empty-desktop.png",
+      "bytes": 120880,
+      "sha256": "a4a57ddf32052360ff5e864e06f8c1bd20f3231394dc7bf4436bb6ef5ffa1a35",
+      "provenance": "Actual CPU browser/source authority evidence; no inference"
+    },
+    {
+      "path": "docs/intent-v1/cpu-mock-transport/human-reviewed-cpu-execution-desktop.png",
+      "bytes": 130710,
+      "sha256": "db5d665c393c8be80f02c36efd3a67960053ae036d7cbdcb6c534b8350c11d63",
+      "provenance": "Synthetic CPU transport UI regression, not a model result"
+    },
+    {
+      "path": "docs/intent-v1/cpu-mock-transport/invalid-calendar-field-desktop.png",
+      "bytes": 189947,
+      "sha256": "79b1ad444a2dfdde6ff6f19e584510b37e13682260942e7d88727f00aef99fd8",
+      "provenance": "Synthetic CPU transport UI regression, not a model result"
+    },
+    {
+      "path": "docs/intent-v1/cpu-mock-transport/replacement-requires-fresh-review-desktop.png",
+      "bytes": 115618,
+      "sha256": "61ae3b24233d732e34a4e8e6a3b1898e36e61de599e4538b51785b7471f13cc2",
+      "provenance": "Synthetic CPU transport UI regression, not a model result"
+    },
+    {
+      "path": "docs/intent-v1/cpu-mock-transport/unproven-proposal-desktop.png",
+      "bytes": 187035,
+      "sha256": "ac2e8aa6498aefa56adf544d9e4046d9085d0c70a8699074320b749109abe766",
+      "provenance": "Synthetic CPU transport UI regression, not a model result"
+    },
+    {
+      "path": "docs/intent-v1/cpu-mock-transport/unproven-proposal-mobile-390.png",
+      "bytes": 321873,
+      "sha256": "b4a46aea47c394150dfdd3a4e6585e38cfe48991687a034e41b9e604c7c4c9cd",
+      "provenance": "Synthetic CPU transport UI regression, not a model result"
+    },
+    {
+      "path": "docs/intent-v1/invalid_calendar_date-desktop.png",
+      "bytes": 159096,
+      "sha256": "e1bbf0a12722735c93c0cc1f0bc3502457c5c3437fb08c276fb40c5da45a5274",
+      "provenance": "Actual CPU browser/source authority evidence; no inference"
+    },
+    {
+      "path": "docs/intent-v1/invalid_date_range-desktop.png",
+      "bytes": 158857,
+      "sha256": "83f73ffd674b5a05d4c541890c3875d7056da37807894198de3316df2dc14fbd",
+      "provenance": "Actual CPU browser/source authority evidence; no inference"
+    },
+    {
+      "path": "docs/intent-v1/late-query-after-revocation-desktop.png",
+      "bytes": 116635,
+      "sha256": "a130ae7fb9ea5831d5dda9d26071a2b30ff9ed8c51bd690258d838252dde701f",
+      "provenance": "Actual CPU browser/source authority evidence; no inference"
+    },
+    {
+      "path": "docs/intent-v1/late-rows-after-revocation-desktop.png",
+      "bytes": 117422,
+      "sha256": "75fc4e5526b5c2adf252181268acbedae6c6f385fe92f194e1d9cc99ef802ff6",
+      "provenance": "Actual CPU browser/source authority evidence; no inference"
+    },
+    {
+      "path": "docs/intent-v1/missing-source-historical-desktop.png",
+      "bytes": 116635,
+      "sha256": "a130ae7fb9ea5831d5dda9d26071a2b30ff9ed8c51bd690258d838252dde701f",
+      "provenance": "Actual CPU browser/source authority evidence; no inference"
+    },
+    {
+      "path": "docs/intent-v1/not-run-intent-desktop.png",
+      "bytes": 164433,
+      "sha256": "b0590d1a2e5531cf24cdcf962b38ce5bf341fe4202a34e29a827047bf5c1ce23",
+      "provenance": "Actual CPU browser/source authority evidence; no inference"
+    },
+    {
+      "path": "docs/intent-v1/not-run-intent-mobile-390.png",
+      "bytes": 305618,
+      "sha256": "ba73e36e42b67c713851d8e0320fb3614b3169e87a5df3095b683417a22a1034",
+      "provenance": "Actual CPU browser/source authority evidence; no inference"
+    },
+    {
+      "path": "docs/intent-v1/optional-branch.png",
+      "bytes": 19543,
+      "sha256": "44494e7661d82004ddcde861345ae2ab15345fcfec1dc567409625a186eb6324",
+      "provenance": "Original generic component diagram"
+    },
+    {
+      "path": "docs/intent-v1/optional-branch.svg",
+      "bytes": 2331,
+      "sha256": "c81b5f56a09fe2d18e614338b1c88289203fc0448741fecc19bf1be742224be6",
+      "provenance": "Original generic component diagram"
+    },
+    {
+      "path": "docs/intent-v1/period_not_in_historical_source-desktop.png",
+      "bytes": 160682,
+      "sha256": "82e5386cad38655babb86991da56f08d98b054c8f074ad6472f746b8f53d20c0",
+      "provenance": "Actual CPU browser/source authority evidence; no inference"
+    },
+    {
+      "path": "docs/intent-v1/scope_not_fully_covered-desktop.png",
+      "bytes": 159962,
+      "sha256": "42ae1e4159c385a0adc0418a09a02996cfd96fcbdbe0905caf2021e846cd3a61",
+      "provenance": "Actual CPU browser/source authority evidence; no inference"
+    }
+  ],
+  "library_status": "No confirmed Library media IDs; desktop upload helper cannot start because Python runtime is unavailable. Public repository artifacts have verified identities."
+}

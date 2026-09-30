@@ -1,0 +1,161 @@
+{
+  "cases": [
+    {
+      "id": "D1",
+      "policy_state": "valid",
+      "query": {
+        "schema_version": "P12-UCI851-QUERY-1",
+        "operation": "sum_source_usage_kwh",
+        "source_labeled_date_from": null,
+        "source_labeled_date_to_exclusive": null,
+        "source_weekstatus": null,
+        "source_load_type": null,
+        "unavailable_topic": null
+      }
+    },
+    {
+      "id": "D2",
+      "policy_state": "valid",
+      "query": {
+        "schema_version": "P12-UCI851-QUERY-1",
+        "operation": "count_by_source_load_type",
+        "source_labeled_date_from": null,
+        "source_labeled_date_to_exclusive": null,
+        "source_weekstatus": null,
+        "source_load_type": null,
+        "unavailable_topic": null
+      }
+    },
+    {
+      "id": "D3",
+      "policy_state": "valid",
+      "query": {
+        "schema_version": "P12-UCI851-QUERY-1",
+        "operation": "describe_source_time_order",
+        "source_labeled_date_from": null,
+        "source_labeled_date_to_exclusive": null,
+        "source_weekstatus": null,
+        "source_load_type": null,
+        "unavailable_topic": null
+      }
+    },
+    {
+      "id": "E1",
+      "policy_state": "valid",
+      "query": {
+        "schema_version": "P12-UCI851-QUERY-1",
+        "operation": "sum_source_usage_kwh",
+        "source_labeled_date_from": "2018-01-01",
+        "source_labeled_date_to_exclusive": "2018-02-01",
+        "source_weekstatus": null,
+        "source_load_type": null,
+        "unavailable_topic": null
+      }
+    },
+    {
+      "id": "E2",
+      "policy_state": "valid",
+      "query": {
+        "schema_version": "P12-UCI851-QUERY-1",
+        "operation": "sum_source_usage_kwh",
+        "source_labeled_date_from": "2018-01-15",
+        "source_labeled_date_to_exclusive": "2018-01-16",
+        "source_weekstatus": null,
+        "source_load_type": null,
+        "unavailable_topic": null
+      }
+    },
+    {
+      "id": "E3",
+      "policy_state": "valid",
+      "query": {
+        "schema_version": "P12-UCI851-QUERY-1",
+        "operation": "compare_source_weekstatus_sums",
+        "source_labeled_date_from": null,
+        "source_labeled_date_to_exclusive": null,
+        "source_weekstatus": null,
+        "source_load_type": null,
+        "unavailable_topic": null
+      }
+    },
+    {
+      "id": "E4",
+      "policy_state": "invalid_calendar_date",
+      "query": {
+        "schema_version": "P12-UCI851-QUERY-1",
+        "operation": "report_missing_or_unresolved_field",
+        "source_labeled_date_from": "2018-02-29",
+        "source_labeled_date_to_exclusive": "2018-03-01",
+        "source_weekstatus": null,
+        "source_load_type": null,
+        "unavailable_topic": "period_coverage"
+      }
+    },
+    {
+      "id": "E5",
+      "policy_state": "period_not_in_historical_source",
+      "query": {
+        "schema_version": "P12-UCI851-QUERY-1",
+        "operation": "report_missing_or_unresolved_field",
+        "source_labeled_date_from": "2026-09-30",
+        "source_labeled_date_to_exclusive": "2026-10-01",
+        "source_weekstatus": null,
+        "source_load_type": null,
+        "unavailable_topic": "period_coverage"
+      }
+    },
+    {
+      "id": "E6",
+      "policy_state": "valid",
+      "query": {
+        "schema_version": "P12-UCI851-QUERY-1",
+        "operation": "report_missing_or_unresolved_field",
+        "source_labeled_date_from": null,
+        "source_labeled_date_to_exclusive": null,
+        "source_weekstatus": null,
+        "source_load_type": null,
+        "unavailable_topic": "co2_mass"
+      }
+    },
+    {
+      "id": "E7",
+      "policy_state": "valid",
+      "query": {
+        "schema_version": "P12-UCI851-QUERY-1",
+        "operation": "report_missing_or_unresolved_field",
+        "source_labeled_date_from": null,
+        "source_labeled_date_to_exclusive": null,
+        "source_weekstatus": null,
+        "source_load_type": null,
+        "unavailable_topic": "energy_per_tonne"
+      }
+    },
+    {
+      "id": "E8",
+      "policy_state": "valid",
+      "query": {
+        "schema_version": "P12-UCI851-QUERY-1",
+        "operation": "report_missing_or_unresolved_field",
+        "source_labeled_date_from": null,
+        "source_labeled_date_to_exclusive": null,
+        "source_weekstatus": null,
+        "source_load_type": null,
+        "unavailable_topic": "electricity_cost"
+      }
+    },
+    {
+      "id": "E9",
+      "policy_state": "valid",
+      "query": {
+        "schema_version": "P12-UCI851-QUERY-1",
+        "operation": "report_missing_or_unresolved_field",
+        "source_labeled_date_from": null,
+        "source_labeled_date_to_exclusive": null,
+        "source_weekstatus": null,
+        "source_load_type": "Maximum_Load",
+        "unavailable_topic": "equipment_fault_cause"
+      }
+    }
+  ],
+  "kind": "Disclosed canonical query labels, kept out of requests"
+}

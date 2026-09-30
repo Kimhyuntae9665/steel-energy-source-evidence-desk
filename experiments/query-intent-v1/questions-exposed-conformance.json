@@ -1,0 +1,15 @@
+{
+  "split": "exposed_conformance",
+  "scope": "Nine question mappings disclosed before this protocol; not independently unseen evaluation.",
+  "questions": [
+    {"id": "E1", "question": "Sum source Usage_kWh for date labels from 2018-01-01 inclusive to 2018-02-01 exclusive."},
+    {"id": "E2", "question": "Sum source Usage_kWh for date labels from 2018-01-15 inclusive to 2018-01-16 exclusive."},
+    {"id": "E3", "question": "Compare source Usage_kWh sums for WeekStatus Weekday and Weekend across the entire file."},
+    {"id": "E4", "question": "Does the historical source cover calendar labels from 2018-02-29 inclusive to 2018-03-01 exclusive?"},
+    {"id": "E5", "question": "Does the historical source cover calendar labels from 2026-09-30 inclusive to 2026-10-01 exclusive?"},
+    {"id": "E6", "question": "Can this source establish a total carbon mass for the full historical period?"},
+    {"id": "E7", "question": "Can this source establish energy per tonne of production over the full historical period?"},
+    {"id": "E8", "question": "Can this source establish electricity cost over the full historical period?"},
+    {"id": "E9", "question": "Can this source explain equipment fault causes for rows labeled Maximum_Load?"}
+  ]
+}
