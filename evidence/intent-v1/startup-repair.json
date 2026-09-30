@@ -1,0 +1,33 @@
+{
+  "kind": "Actual delayed startup admission failure engineering regression",
+  "before_commit": "0dbe617c0a14a3d619ce5fda1e675b6787b593b5",
+  "model_calls": 0,
+  "frozen_protocol_changed": false,
+  "original_source_sha256": "9b1cee6f9cb9cd9df2b95814ca90a9a2ff15b7f5f1fba0fae3c643e82072eacc",
+  "checks": [
+    {
+      "before_repair": true,
+      "state": "EXECUTED \u00b7 OK",
+      "confirmation": true,
+      "receipt_enabled": true,
+      "query_enabled": true,
+      "cached_exact_answer_unchanged": true,
+      "cached_receipt_sha256": "45f3c985df16e50fc44012adca4e071f3302cff9d6c55ad95c4f0c9b820474fa",
+      "source_file_fault": "owned copy renamed, original unchanged",
+      "model_calls": 0,
+      "outcome": "reproduced stale authority display"
+    },
+    {
+      "before_repair": false,
+      "state": "HISTORICAL SOURCE SNAPSHOT \u00b7 CURRENT AUTHORITY UNAVAILABLE \u00b7 RE-ADMISSION REQUIRED",
+      "confirmation": false,
+      "receipt_enabled": false,
+      "query_enabled": false,
+      "cached_exact_answer_unchanged": true,
+      "cached_receipt_sha256": "45f3c985df16e50fc44012adca4e071f3302cff9d6c55ad95c4f0c9b820474fa",
+      "source_file_fault": "owned copy renamed, original unchanged",
+      "model_calls": 0,
+      "outcome": "shared revocation preserves historical evidence"
+    }
+  ]
+}

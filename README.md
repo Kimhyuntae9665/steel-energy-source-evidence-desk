@@ -135,10 +135,13 @@ Current engineering checks: **46 Node tests**, **4 pure protocol/budget tests**,
 python3 scripts/test-intent-protocol.py
 python3 scripts/test-intent-transport.py
 python3 scripts/browser-intent-check.py
+python3 scripts/browser-intent-startup-check.py
 # Generation runner requires a separate explicit GPU resource handover.
 ```
 
 ## Executed three-case development result
+
+A separate [delayed-startup before/after regression](evidence/intent-v1/startup-repair.json) reproduced an unavailable source response arriving from the initial intent-list request after a successful manual query. Startup now uses shared authority revocation: confirmation and fresh actions clear while the exact cached answer stays historical. Only an owned source copy was renamed; original bytes and the frozen inference method/results were unchanged. [Before repair](docs/intent-v1/startup-repair/before-repair.png) · [after repair](docs/intent-v1/startup-repair/after-repair.png).
 
 Frozen method commit: [`4b027eb92fe4208d43bc64cbe9f573d0b66dad03`](https://github.com/Kimhyuntae9665/steel-energy-source-evidence-desk/commit/4b027eb92fe4208d43bc64cbe9f573d0b66dad03), freeze SHA256 `2b971409cf0867b5f00d08654cd296e2c64919e3e7e0d3517a61402dc57a40dc`. [Write-once raw-field report](model-runs/query-intent-v1/development-report.json) · [unmodified D1 attempt](model-runs/query-intent-v1/development/D1.json) · [D2](model-runs/query-intent-v1/development/D2.json) · [D3](model-runs/query-intent-v1/development/D3.json).
 

@@ -139,6 +139,18 @@
       "bytes": 159962,
       "sha256": "42ae1e4159c385a0adc0418a09a02996cfd96fcbdbe0905caf2021e846cd3a61",
       "provenance": "Actual CPU browser/source authority evidence; no inference"
+    },
+    {
+      "path": "docs/intent-v1/startup-repair/after-repair.png",
+      "bytes": 116635,
+      "sha256": "a130ae7fb9ea5831d5dda9d26071a2b30ff9ed8c51bd690258d838252dde701f",
+      "provenance": "Actual CPU browser/source authority evidence; no inference"
+    },
+    {
+      "path": "docs/intent-v1/startup-repair/before-repair.png",
+      "bytes": 110886,
+      "sha256": "0b14725e179df54c7137bee107d4539028b02ecc7630bc000d16ca05843ee98f",
+      "provenance": "Preserved before-repair CPU screenshot"
     }
   ],
   "library_status": "No confirmed Library media IDs; desktop upload helper cannot start because Python runtime is unavailable. Public repository artifacts have verified identities."
