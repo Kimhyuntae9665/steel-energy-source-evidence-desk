@@ -1,10 +1,10 @@
-![Implemented CPU evidence flow: CSV to Audit and Query, Query to Chart and Receipt](docs/architecture.png)
+![Main CPU evidence flow: CSV to Audit and Query, Query to Chart and Receipt](docs/intent-v1/architecture-current.png)
 
 # Steel energy source evidence desk · P12
 
-A native evidence desk for the public UCI Steel Industry Energy Consumption dataset. Admit pinned original bytes, inspect data-quality limits, confirm a visible allowlisted query, and follow its exact decimal answer back to every contributing CSV row. The first diagram shows the original main CPU path; the optional stored-intent review branch is documented separately below. All glyphs are original generic artwork. [Editable SVG](docs/architecture.svg) · [asset provenance](docs/asset-provenance.json).
+A native evidence desk for the public UCI Steel Industry Energy Consumption dataset. Admit pinned original bytes, inspect data-quality limits, confirm a visible allowlisted query, and follow its exact decimal answer back to every contributing CSV row. The first diagram shows the original main CPU path; the optional stored-intent review branch is documented separately below. All glyphs are original generic artwork. [Current editable SVG](docs/intent-v1/architecture-current.svg) · [current glyph provenance](docs/intent-v1/asset-provenance.json). The original [baseline SVG](docs/architecture.svg) and [PNG](docs/architecture.png) remain unchanged; the new derivative enlarges only labels for narrow published rendering.
 
-This is an executed **historical-data prototype with CPU arithmetic** and a separately frozen optional stored-query-intent branch. Generation calls remain **0** before an explicit resource handover. It has no live connection, SQL generation, equipment control or carbon/billing authority. The source labels refer to 2018; they are not current readings. No throughput, ROI, savings or fault-diagnosis claim is made.
+This is an executed **historical-data prototype with CPU arithmetic** and a separately frozen optional stored-query-intent branch. The optional development batch used **3 generation calls** under an explicit resource handover. It has no live connection, SQL generation, equipment control or carbon/billing authority. The source labels refer to 2018; they are not current readings. No throughput, ROI, savings or fault-diagnosis claim is made.
 
 ## Actual native demo
 
@@ -113,7 +113,7 @@ The fingerprint is SHA256 of UTF-8 `JSON.stringify(receiptWithoutQueryFingerprin
 
 The original 30 Node tests cover source integrity, exact decimals, BOM/header preservation, invalid calendars/enums, precedence, empty groups, missing versus stored zero, source pointers, pure non-energy selection, digest binding and stale exports. [16 actual CPU Chrome checks](evidence/browser-checks.json) cover Tab/Enter, stable and explicit focus, delayed/repeated/stale responses, clearing confirmation, exact receipt bytes, unknown/empty/invalid scopes, stored source zero, cross-timezone labels and 390px readability. Browser checks are engineering regressions, not accessibility certification. [Before-repair reproduction](evidence/ui-before-repair.json) preserves the receipt/confirmation/chart failures rather than hiding them. A native keyboard regression also caught and fixed focus loss while the submitting button was disabled. The video is sampled from actual native browser frames at 5 fps and encoded with the available system FFmpeg; no new media binary or model was installed.
 
-All 12 disclosed CPU conformance cases executed. Their expected meanings were already exposed, so they are **not an independently unseen benchmark**. The optional protocol below is frozen before inference; model requests and P12 GPU use remain **0**, with no measured model result yet.
+All 12 disclosed CPU conformance cases executed. Their expected meanings were already exposed, so they are **not an independently unseen benchmark**. The optional protocol below was frozen before inference; its separately reported three-case development batch is now complete.
 
 ## Optional stored query intent · frozen before inference
 
@@ -127,7 +127,7 @@ Method paths: [prompt](experiments/query-intent-v1/prompt.txt), [typed schema](e
 
 Planned initial batch: **3 declared development questions D1–D3, once each**. Gate: all three provenance-valid completed outputs, strict schema, 21/21 exact raw fields and three policy-allowed proposals. Only after a separate report/handover may the **9 exposed conformance questions E1–E9** run unchanged. These disclosed inputs are not unseen evaluation. Invalid/outside dates must survive raw output for backend rejection; a correct interpretation may still be policy-rejected. Every scheduled failure remains in the denominator; deterministic repair receives zero model credit. Phase reports refuse overwrite.
 
-Current model generation calls: **0**. UI inspection triggers none. CPU tests use explicitly labeled in-memory synthetic transport fixtures, never stored under model-results paths and never credited as inference. Original CPU source, policy, arithmetic, evidence and media remain protected by 24 frozen baseline digests.
+Actual model generation calls: **3** in the completed development batch, with **0 retries, 0 demo inference and 0 exposed-conformance calls**. UI inspection and native captures trigger none. CPU tests use explicitly labeled in-memory synthetic transport fixtures, never stored under model-results paths and never credited as inference. Original CPU source, policy, arithmetic, evidence and media remain protected by 24 frozen baseline digests.
 
 Current engineering checks: **46 Node tests**, **4 pure protocol/budget tests**, **8 mocked transport-failure tests**, plus [28 actual CPU Chrome authority/offline and synthetic-review checks](evidence/intent-v1/browser-checks.json). Missing/unreadable source, dictionary and policy copies revoke client authority. Preselection calendar/range/outside/partial failures show **Not evaluated**, while covered empty selection shows **0**. [Current partial coverage](docs/intent-v1/scope_not_fully_covered-desktop.png) · [historical source failure](docs/intent-v1/missing-source-historical-desktop.png) · [offline intent at 390px](docs/intent-v1/not-run-intent-mobile-390.png). The separate [six in-memory mock-transport UI checks](evidence/intent-v1/cpu-mock-transport/browser-checks.json) cover semantic-review clarity, two confirmations, exact export binding, delayed/stale/repeated review, field-specific rejection and keyboard/mobile behavior. Those fixtures are explicitly synthetic CPU test inputs, not model outputs. [CPU-mock review-flow evidence](evidence/intent-v1/cpu-mock-transport/browser-checks.json) exercises staged review, exact receipts, stale replacement, delayed/repeated actions, keyboard focus and field-specific rejections; these are not model outputs. The preserved [mobile overflow reproduction](evidence/intent-v1/before-mobile-repair/before-mobile-repair.json) precedes the wrapping fix. Browser checks are bounded engineering evidence, not accessibility certification.
 
@@ -137,6 +137,24 @@ python3 scripts/test-intent-transport.py
 python3 scripts/browser-intent-check.py
 # Generation runner requires a separate explicit GPU resource handover.
 ```
+
+## Executed three-case development result
+
+Frozen method commit: [`4b027eb92fe4208d43bc64cbe9f573d0b66dad03`](https://github.com/Kimhyuntae9665/steel-energy-source-evidence-desk/commit/4b027eb92fe4208d43bc64cbe9f573d0b66dad03), freeze SHA256 `2b971409cf0867b5f00d08654cd296e2c64919e3e7e0d3517a61402dc57a40dc`. [Write-once raw-field report](model-runs/query-intent-v1/development-report.json) · [unmodified D1 attempt](model-runs/query-intent-v1/development/D1.json) · [D2](model-runs/query-intent-v1/development/D2.json) · [D3](model-runs/query-intent-v1/development/D3.json).
+
+Three scheduled/attempted/completed HTTP200 requests: **3/3 strict raw intents, 21/21 raw fields, 3/3 structurally valid, 3/3 policy-allowed, 0 unexpected fields**. There were no failures, retries or additional inference calls. This checks only the three declared full-source development questions under this prompt/schema; it does not establish general natural-language accuracy. The nine exposed conformance questions remain **not run** and require a separate explicit handover despite the development gate passing.
+
+| Case | Raw operation | API input/output tokens | Local request elapsed |
+|---|---|---:|---:|
+| D1 | sum_source_usage_kwh | 513 / 71 | 3149.28ms |
+| D2 | count_by_source_load_type | 511 / 71 | 1406.21ms |
+| D3 | describe_source_time_order | 509 / 70 | 1363.03ms |
+
+These are retained API counts and local request timings, not production latency measurements. The model supplied no energy number. A [native stored-output capture](evidence/intent-v1/actual-stored-development.json) then reviewed D1's exact seven fields, required a separate source-label confirmation and executed the unchanged deterministic CPU query. Its source sum `959636.71` is credited only to CPU arithmetic, not the model.
+
+[Actual raw proposal/human review](docs/intent-v1/actual-stored-development/raw-proposal-human-review.png) · [separate CPU result](docs/intent-v1/actual-stored-development/human-reviewed-cpu-result.png) · [native stored-intent video](docs/intent-v1/actual-stored-development/stored-intent-cpu-demo.mp4). Captures use stored actual output and add **0 inference calls**; synthetic regression screenshots remain separately labeled. [Media identity manifest](evidence/intent-v1/media-manifest.json) records file hashes. No confirmed Library media IDs are available: the supported desktop upload helper cannot start because that desktop has no Python runtime. The verified public repository copies remain available.
+
+The lease was explicitly released after all three durable completion records, a free shared lock, absent timeout barrier, zero loaded models and zero GPU compute processes were verified.
 
 ## Deployment limits
 

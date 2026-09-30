@@ -1,6 +1,37 @@
 {
-  "model_generation_calls": 0,
+  "model_generation_calls": 3,
+  "capture_inference_calls": 0,
   "files": [
+    {
+      "path": "docs/intent-v1/actual-stored-development/human-reviewed-cpu-result.png",
+      "bytes": 149490,
+      "sha256": "c111357dc59d1623ea7e7d28a0042fb4b1946bedf7198128ddde1f28d2c6b7b4",
+      "provenance": "Actual stored three-call development output; capture CPU-only with zero new inference"
+    },
+    {
+      "path": "docs/intent-v1/actual-stored-development/raw-proposal-human-review.png",
+      "bytes": 131017,
+      "sha256": "0c8dde010d46fd9df27c85427fb6dd568822348d016f17f8c7b90fa4c528f852",
+      "provenance": "Actual stored three-call development output; capture CPU-only with zero new inference"
+    },
+    {
+      "path": "docs/intent-v1/actual-stored-development/stored-intent-cpu-demo.mp4",
+      "bytes": 284186,
+      "sha256": "481e153de4b94c9a61f8d90d988b80533ca4ff938ebc784cb86d806d4cd98f84",
+      "provenance": "Actual stored three-call development output; capture CPU-only with zero new inference"
+    },
+    {
+      "path": "docs/intent-v1/architecture-current.png",
+      "bytes": 41318,
+      "sha256": "0fff46e48a0f47eee7a891c2ff0c5b438084c213710d8ddb2aab9b8c1d618e6a",
+      "provenance": "Original generic component diagram"
+    },
+    {
+      "path": "docs/intent-v1/architecture-current.svg",
+      "bytes": 3469,
+      "sha256": "02dc82ec8a1f00cfd15c7490e12799a318ffef10e600e6ffa2694b817ca7c181",
+      "provenance": "Original generic component diagram"
+    },
     {
       "path": "docs/intent-v1/before-mobile-repair/before-mobile-repair.png",
       "bytes": 358741,

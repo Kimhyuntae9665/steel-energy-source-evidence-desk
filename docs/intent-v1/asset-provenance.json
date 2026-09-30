@@ -1,7 +1,8 @@
 {
   "glyphs": "Original MIT geometric component glyphs, not technology logos",
-  "topology": "Stored typed Intent -> human Review -> visible Query builder; execution requires separate confirmation",
+  "topology": "Main unchanged CPU graph: CSV->Audit and Query; Query->Chart and Receipt. Separate stored typed Intent -> human Review -> visible Query builder; execution requires separate confirmation",
   "style_reference": "User-approved original logo-card style; no reference pixels copied",
+  "main_graph_derivative": "Original protected720x660CPU SVG retained unchanged. New derivative increases only label font32->40 for current narrow GitHub rendering; same glyphs, positions and topology.",
   "resource_embedding": "Native inline SVG paths only",
   "fit": "Each48x48viewBox fitted72x72, aspect ratio1 preserved",
   "files": [
@@ -14,6 +15,16 @@
       "path": "docs/intent-v1/optional-branch.png",
       "bytes": 19543,
       "sha256": "44494e7661d82004ddcde861345ae2ab15345fcfec1dc567409625a186eb6324"
+    },
+    {
+      "path": "docs/intent-v1/architecture-current.svg",
+      "bytes": 3469,
+      "sha256": "02dc82ec8a1f00cfd15c7490e12799a318ffef10e600e6ffa2694b817ca7c181"
+    },
+    {
+      "path": "docs/intent-v1/architecture-current.png",
+      "bytes": 41318,
+      "sha256": "0fff46e48a0f47eee7a891c2ff0c5b438084c213710d8ddb2aab9b8c1d618e6a"
     }
   ]
 }
