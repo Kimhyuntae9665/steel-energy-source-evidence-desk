@@ -17,6 +17,11 @@ jobs:
           python3 scripts/test-intent-transport.py
       - name: Stored model receipts match frozen provenance and disclosed raw labels (no inference)
         run: node scripts/verify-intent-results.mjs
+      - name: Exposed conformance raw fields and separate CPU outcomes (no inference)
+        run: |
+          python3 scripts/prepare-exposed-conformance.py --check
+          node scripts/verify-exposed-conformance.mjs
+          node scripts/build-exposed-conformance-evidence.mjs --check
       - run: node scripts/build-evidence.mjs
       - run: python3 scripts/independent-arithmetic.py
       - name: Derived source checks match committed receipts

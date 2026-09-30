@@ -127,7 +127,7 @@ Method paths: [prompt](experiments/query-intent-v1/prompt.txt), [typed schema](e
 
 Planned initial batch: **3 declared development questions D1–D3, once each**. Gate: all three provenance-valid completed outputs, strict schema, 21/21 exact raw fields and three policy-allowed proposals. Only after a separate report/handover may the **9 exposed conformance questions E1–E9** run unchanged. These disclosed inputs are not unseen evaluation. Invalid/outside dates must survive raw output for backend rejection; a correct interpretation may still be policy-rejected. Every scheduled failure remains in the denominator; deterministic repair receives zero model credit. Phase reports refuse overwrite.
 
-Actual model generation calls: **3** in the completed development batch, with **0 retries, 0 demo inference and 0 exposed-conformance calls**. UI inspection and native captures trigger none. CPU tests use explicitly labeled in-memory synthetic transport fixtures, never stored under model-results paths and never credited as inference. Original CPU source, policy, arithmetic, evidence and media remain protected by 24 frozen baseline digests.
+Actual model generation calls: **12** across the separate completed three-case development and nine-case exposed-conformance batches, with **0 retries and 0 demo inference**. UI inspection and native captures trigger none. CPU tests use explicitly labeled in-memory synthetic transport fixtures, never stored under model-results paths and never credited as inference. Original CPU source, policy, arithmetic, evidence and media remain protected by 24 frozen baseline digests.
 
 Current engineering checks: **46 Node tests**, **4 pure protocol/budget tests**, **8 mocked transport-failure tests**, plus [28 actual CPU Chrome authority/offline and synthetic-review checks](evidence/intent-v1/browser-checks.json). Missing/unreadable source, dictionary and policy copies revoke client authority. Preselection calendar/range/outside/partial failures show **Not evaluated**, while covered empty selection shows **0**. [Current partial coverage](docs/intent-v1/scope_not_fully_covered-desktop.png) · [historical source failure](docs/intent-v1/missing-source-historical-desktop.png) · [offline intent at 390px](docs/intent-v1/not-run-intent-mobile-390.png). The separate [six in-memory mock-transport UI checks](evidence/intent-v1/cpu-mock-transport/browser-checks.json) cover semantic-review clarity, two confirmations, exact export binding, delayed/stale/repeated review, field-specific rejection and keyboard/mobile behavior. Those fixtures are explicitly synthetic CPU test inputs, not model outputs. The preserved [mobile overflow reproduction](evidence/intent-v1/before-mobile-repair/before-mobile-repair.json) precedes the wrapping fix. Browser checks are bounded engineering evidence, not accessibility certification.
 
@@ -145,7 +145,7 @@ A separate [delayed-startup before/after regression](evidence/intent-v1/startup-
 
 Frozen method commit: [`4b027eb92fe4208d43bc64cbe9f573d0b66dad03`](https://github.com/Kimhyuntae9665/steel-energy-source-evidence-desk/commit/4b027eb92fe4208d43bc64cbe9f573d0b66dad03), freeze SHA256 `2b971409cf0867b5f00d08654cd296e2c64919e3e7e0d3517a61402dc57a40dc`. [Write-once raw-field report](model-runs/query-intent-v1/development-report.json) · [unmodified D1 attempt](model-runs/query-intent-v1/development/D1.json) · [D2](model-runs/query-intent-v1/development/D2.json) · [D3](model-runs/query-intent-v1/development/D3.json).
 
-Three scheduled/attempted/completed HTTP200 requests: **3/3 strict raw intents, 21/21 raw fields, 3/3 structurally valid, 3/3 policy-allowed, 0 unexpected fields**. There were no failures, retries or additional inference calls. This checks only the three declared full-source development questions under this prompt/schema; it does not establish general natural-language accuracy. The nine exposed conformance questions remain **not run** and require a separate explicit handover despite the development gate passing.
+Three scheduled/attempted/completed HTTP200 requests: **3/3 strict raw intents, 21/21 raw fields, 3/3 structurally valid, 3/3 policy-allowed, 0 unexpected fields**. There were no failures, retries or additional inference calls. This checks only the three declared full-source development questions under this prompt/schema; it does not establish general natural-language accuracy. This development report predates the separately authorized nine-case exposed-conformance batch below; those cases contribute nothing to the development score.
 
 The literal **21/21** consists of **three operation choices, three schema-version values, and fifteen null filter/topic values**. These three full-source questions provide no model-tested evidence of date extraction, category-filter selection, invalid/outside-date preservation, or unknown-topic routing. The result establishes the disclosed development mappings only; backend arithmetic and synthetic regressions supply separate evidence.
 
@@ -163,16 +163,40 @@ The lease was explicitly released after all three durable completion records, a 
 
 ## CPU readiness for the separate exposed-conformance batch
 
-[Write-once readiness manifest](experiments/query-intent-v1/exposed-conformance-readiness.json) binds the unchanged E1–E9 question text, canonical request digests, per-request input bounds/headroom, exact seven-field labels and expected policy states to the existing freeze. Preparation makes **0 generation calls** and grants no inference resources. The nine already-exposed questions remain **not run** until a separate explicit handover; they are not an unseen benchmark.
+[Write-once readiness manifest](experiments/query-intent-v1/exposed-conformance-readiness.json) binds the unchanged E1–E9 question text, canonical request digests, per-request input bounds/headroom, exact seven-field labels and expected policy states to the existing freeze. Preparation makes **0 generation calls** and grants no inference resources. The nine already-exposed questions were subsequently run once after a separate explicit handover, under this committed request/scoring freeze; they are not an unseen benchmark.
 
 The same grading retains **63 raw fields across 9 scheduled cases**, with strict full-query matches, structural validity and policy permission reported separately. Failed or absent outputs remain in their scheduled denominators; deterministic repair receives zero model credit. Runtime remains context 4096/output 640, timeout 60 seconds, concurrency 1, retries 0 and demos 0. Prompt, schema, questions, disclosed labels, scoring, all 19 frozen method files, 24 protected baseline files, and existing development results remain unchanged.
 
-This prepared set does not test every route: `source_weekstatus` is null in all nine labels; E3 requests a comparison operation rather than a WeekStatus filter. `count_source_rows` appears in neither the three executed development cases nor the nine prepared cases, so it remains untested by model output. The planned date, Load_Type-filter and unavailable-topic mappings are pending evidence, not reported successes.
+This prepared set does not test every route: `source_weekstatus` is null in all nine labels; E3 requests a comparison operation rather than a WeekStatus filter. `count_source_rows` appears in neither the three executed development cases nor the nine prepared cases, so it remains untested by model output. The separately reported conformance results below cover the disclosed date, Load_Type-filter and unavailable-topic questions; they do not establish broad generalization.
 
 ```sh
 # Pure CPU construction once; refuses to overwrite an existing manifest.
 python3 scripts/prepare-exposed-conformance.py
 # Pure CPU identity/budget verification after preparation; no model call.
+python3 scripts/prepare-exposed-conformance.py --check
+```
+
+## Executed nine-case exposed conformance result
+
+The separate request/scoring freeze was committed at [`b760d33e1005aca15ac704a7b94116f9ccb91bd5`](https://github.com/Kimhyuntae9665/steel-energy-source-evidence-desk/commit/b760d33e1005aca15ac704a7b94116f9ccb91bd5), readiness SHA256 `cbb405f1d37972e0567c95a5aa319791e46021688598626b8d10143dd6433998`. Prompt, schema, runtime, source, labels and original development outputs were unchanged. These nine familiar questions are **exposed conformance checks, not held-out accuracy**.
+
+Exactly **9 scheduled, attempted and completed requests**, all HTTP200 with completion records: **9/9 valid structures, 59/63 exact raw fields, 6/9 exact complete intents, 7 policy-allowed and 2 policy-rejected**; no unexpected fields, retries, tuning, repair or demo calls. [Write-once raw-field report](model-runs/query-intent-v1/exposed-conformance-report.json) and [all unmodified attempt receipts](model-runs/query-intent-v1/exposed-conformance) preserve every scheduled denominator. The inherited `development_gate_passed:false` field is development-only and deliberately false for this phase; it does not revoke the earlier three-case development gate.
+
+| Cases | Raw intent result | Separate deterministic result |
+|---|---|---|
+| E1 / E2 | Exact January / January15 date-scope queries | CPU returns `126238.29` for2976 rows and `3968.64` for96 rows. These numbers are not model arithmetic. |
+| E3 | Incorrect extra `source_weekstatus=Weekday` filter narrows the requested comparison | CPU executes that uncorrected query: Weekday sum `842501.16`; Weekend remains `empty_group` with zero selected rows and null sum. A policy-valid query can still be semantically wrong. |
+| E4 / E5 | Wrong `describe_source_time_order` operation; E4 also omits the required `period_coverage` topic | Preserved date labels cause backend `invalid_calendar_date` / `period_not_in_historical_source`. Matching rejection states do **not** earn correct raw-intent credit. |
+| E6–E9 | Exact unavailable-topic queries, including E9's `Maximum_Load` filter | Valid queries return unresolved CO2 mass, absent production quantity, absent tariffs/billing rules and absent equipment/fault-cause labels. Unknown answers are expected outcomes, not failed refusals; no numeric answer is invented. |
+
+[CPU cross-report](evidence/intent-v1/exposed-conformance.json) records each unchanged raw query, selected/contributing counts and row-ID digests, query receipt fingerprint, raw semantic result and separate backend status. It is an engineering execution receipt, not a human product acceptance. All arithmetic stays in the pinned deterministic backend, with **zero arithmetic credit to the model**.
+
+The GPU lease was explicitly released after all nine durable terminal records and runner exit, a free shared lock, absent timeout marker, zero loaded models and zero GPU compute processes were verified. Publication and grading were CPU-only. This bounded prompt/schema run cannot establish general extraction, financial/carbon inference or production latency. WeekStatus filtering and `count_source_rows` still lack a correct targeted model case in this protocol.
+
+```sh
+# Reproduce grading and CPU evidence without model calls or overwriting receipts.
+node scripts/verify-exposed-conformance.mjs
+node scripts/build-exposed-conformance-evidence.mjs --check
 python3 scripts/prepare-exposed-conformance.py --check
 ```
 
