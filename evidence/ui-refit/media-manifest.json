@@ -1,5 +1,16 @@
 {
   "base_commit": "29ccb12c1a205512f4dd468c7aed9714e5150cda",
+  "captured_ui_source_reference_commit": "1edbc90393c0a4b2d323e3421920deefcaaa851f",
+  "runtime_sources": [
+    "ui-v2/index.html",
+    "ui-v2/style.css",
+    "ui-v2/server.mjs",
+    "app.mjs",
+    "intent-app.mjs",
+    "display.mjs",
+    "server.mjs"
+  ],
+  "backend_method_identity": "Additional immutable parser/policy/intent-store modules are bound by experiments/query-intent-v1/freeze.json; their digests remain unchanged.",
   "model_calls_added": 0,
   "frozen_total_model_calls": 12,
   "new_native_screenshots": 10,
@@ -97,6 +108,41 @@
       "path": "ui-v2/server.mjs",
       "bytes": 1190,
       "sha256": "dc06643a120d319d1cee9e99c811d3249e7c875287c2fa7a9b21731163a3a56f",
+      "state": "current UI v2",
+      "provenance": "Versioned UI source or actual native Chrome engineering capture; no fabricated or newly generated model outputs"
+    },
+    {
+      "path": "app.mjs",
+      "bytes": 14446,
+      "sha256": "2b682f5093e00e07a6550bf89ca815c5b79ada22bcbbdb02ec86747a92b11104",
+      "state": "reused unchanged UI/runtime",
+      "provenance": "Original delegated frontend/server bytes actually served by the overlay; unchanged from the captured UI commit"
+    },
+    {
+      "path": "intent-app.mjs",
+      "bytes": 5741,
+      "sha256": "5c033657be8009a5d51880718eaea3f97ab077e04df78d106f79dcd02212b7e8",
+      "state": "reused unchanged UI/runtime",
+      "provenance": "Original delegated frontend/server bytes actually served by the overlay; unchanged from the captured UI commit"
+    },
+    {
+      "path": "display.mjs",
+      "bytes": 144,
+      "sha256": "5b9e3b6e92c1399f8954c53006aa24b0ce4f474fee2083d4935b0ce5a34c892a",
+      "state": "reused unchanged UI/runtime",
+      "provenance": "Original delegated frontend/server bytes actually served by the overlay; unchanged from the captured UI commit"
+    },
+    {
+      "path": "server.mjs",
+      "bytes": 7522,
+      "sha256": "db63cbd3f9dad05f6cf6fe02cb08a086f801403e3e1d96222d872480fbf225d9",
+      "state": "reused unchanged UI/runtime",
+      "provenance": "Original delegated frontend/server bytes actually served by the overlay; unchanged from the captured UI commit"
+    },
+    {
+      "path": "scripts/ui-refit-media-manifest.py",
+      "bytes": 2558,
+      "sha256": "53392ed20582cdac5f22d01a644dd2c1ed55bd8a20e41b776a06598c5fef963b",
       "state": "current UI v2",
       "provenance": "Versioned UI source or actual native Chrome engineering capture; no fabricated or newly generated model outputs"
     },
